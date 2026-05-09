@@ -1,0 +1,76 @@
+%tokens
+
+POSTOFFICEBOX EXTENDEDADDRESS STREETADDRESS LOCALITY REGION POSTALCODE COUNTRYNAME : { } , STRING
+
+%rules
+
+init
+    : { object }
+    ;
+
+object
+    : << (extend)? || (street)? || local || region || (code)? || country >> post2
+    | << (post)? || (street)? || local || region || (code)? || country >> extend2
+    | << (post)? || (extend)? || local || region || (code)? || country >> street2
+    | << (post)? || (extend)? || (street)? || region || (code)? || country >> local2
+    | << (post)? || (extend)? || (street)? || local || (code)? || country >> region2
+    | << (post)? || (extend)? || (street)? || local || region || country >> code2
+    | << (post)? || (extend)? || (street)? || local || region || (code)? >> country2
+    ;
+
+post
+    : post2 ,
+    ;
+
+extend
+    : extend2 ,
+    ;
+
+street
+    : street2 ,
+    ;
+
+local
+    : local2 ,
+    ;
+
+region
+    : region2 ,
+    ;
+
+code
+    : code2 ,
+    ;
+
+country
+    : country2 ,
+    ;
+
+post2
+    : POSTOFFICEBOX : STRING
+    ;
+
+extend2
+    : EXTENDEDADDRESS : STRING
+    ;
+
+street2
+    : STREETADDRESS : STRING
+    ;
+
+local2
+    : LOCALITY : STRING
+    ;
+
+region2
+    : REGION : STRING
+    ;
+
+code2
+    : POSTALCODE : STRING
+    ;
+
+country2
+    : COUNTRYNAME : STRING
+    ;
+

@@ -1,0 +1,85 @@
+%tokens
+
+NAME AGE ADDRESS HOBBIES STREET CITY STATE POSTALCODE : { } [ ] , STRING INT
+
+%rules
+
+init
+    : { << age || (address)? || (hobbies)? >> name2 }
+    | { << name || (address)? || (hobbies)? >> age2 }
+    | { << name || age || (hobbies)? >> address2 }
+    | { << name || age || (address)? >> hobbies2 }
+    ;
+
+name
+    : name2 ,
+    ;
+
+age
+    : age2 ,
+    ;
+
+address
+    : address2 ,
+    ;
+
+hobbies
+    : hobbies2 ,
+    ;
+
+name2
+    : NAME : STRING
+    ;
+
+age2
+    : AGE : INT
+    ;
+
+address2
+    : ADDRESS : { << city || state || code >> street2 }
+    | ADDRESS : { << street || state || code >> city2 }
+    | ADDRESS : { << street || city || code >> state2 }
+    | ADDRESS : { << street || city || state >> code2 }
+    ;
+
+hobbies2
+    : HOBBIES : [ ]
+    | HOBBIES : [ STRING moreHobbies ]
+    ;
+
+moreHobbies
+    : , STRING moreHobbies
+    | 
+    ;
+
+street
+    : street2 ,
+    ;
+
+city
+    : city2 ,
+    ;
+
+state
+    : state2 ,
+    ;
+
+code
+    : code2 ,
+    ;
+
+street2
+    : STREET : STRING
+    ;
+
+city2
+    : CITY : STRING
+    ;
+
+state2
+    : STATE : STRING
+    ;
+
+code2
+    : POSTALCODE : STRING
+    ;

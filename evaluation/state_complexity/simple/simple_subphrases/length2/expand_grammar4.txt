@@ -1,0 +1,32 @@
+%tokens
+
+token1 token2 token3 token4 token5 token6 token7 token8 
+
+%rules
+
+init
+	: token5 token6 token1 token2 token3 token4 token7 token8 
+	| token7 token8 token5 token6 token3 token4 token1 token2 
+	| token7 token8 token5 token6 token1 token2 token3 token4 
+	| token7 token8 token3 token4 token5 token6 token1 token2 
+	| token7 token8 token3 token4 token1 token2 token5 token6 
+	| token7 token8 token1 token2 token5 token6 token3 token4 
+	| token7 token8 token1 token2 token3 token4 token5 token6 
+	| token5 token6 token7 token8 token3 token4 token1 token2 
+	| token5 token6 token7 token8 token1 token2 token3 token4 
+	| token5 token6 token3 token4 token7 token8 token1 token2 
+	| token5 token6 token3 token4 token1 token2 token7 token8 
+	| token5 token6 token1 token2 token7 token8 token3 token4 
+	| token1 token2 token3 token4 token5 token6 token7 token8 
+	| token3 token4 token7 token8 token5 token6 token1 token2 
+	| token3 token4 token7 token8 token1 token2 token5 token6 
+	| token3 token4 token5 token6 token7 token8 token1 token2 
+	| token3 token4 token5 token6 token1 token2 token7 token8 
+	| token3 token4 token1 token2 token7 token8 token5 token6 
+	| token3 token4 token1 token2 token5 token6 token7 token8 
+	| token1 token2 token7 token8 token5 token6 token3 token4 
+	| token1 token2 token7 token8 token3 token4 token5 token6 
+	| token1 token2 token5 token6 token7 token8 token3 token4 
+	| token1 token2 token5 token6 token3 token4 token7 token8 
+	| token1 token2 token3 token4 token7 token8 token5 token6 
+	;

@@ -1,0 +1,1224 @@
+%tokens
+
+TITLE DIRECTOR RELEASEDATE GENRE DURATION CAST : { } [ ] , STRING 
+
+%rules
+
+init
+	: { object } 
+	;
+
+object
+	: cast director title release genre2 
+	| duration director release title genre2 
+	| duration cast title release director genre2 
+	| cast title release director genre2 
+	| duration cast title director release genre2 
+	| cast title director release genre2 
+	| duration release cast director title genre2 
+	| duration release cast title director genre2 
+	| duration release director cast title genre2 
+	| duration release director title cast genre2 
+	| duration release director title genre2 
+	| duration release title cast director genre2 
+	| duration release title director cast genre2 
+	| duration release title director genre2 
+	| duration director cast release title genre2 
+	| duration director cast title release genre2 
+	| duration director release cast title genre2 
+	| duration director release title cast genre2 
+	| cast director duration title release genre2 
+	| cast title release director duration genre2 
+	| release director title duration genre2 
+	| cast director release duration title genre2 
+	| cast director release title duration genre2 
+	| cast director title duration release genre2 
+	| cast director title release duration genre2 
+	| cast title duration release director genre2 
+	| cast title duration director release genre2 
+	| cast title release duration director genre2 
+	| duration cast director title release genre2 
+	| cast title director duration release genre2 
+	| cast title director release duration genre2 
+	| duration cast release director title genre2 
+	| cast release director title genre2 
+	| duration cast release title director genre2 
+	| cast release title director genre2 
+	| duration cast director release title genre2 
+	| cast director release title genre2 
+	| release director cast duration title genre2 
+	| release duration cast title director genre2 
+	| release cast title director genre2 
+	| release duration director cast title genre2 
+	| release duration director title cast genre2 
+	| release duration director title genre2 
+	| release duration title cast director genre2 
+	| release duration title director cast genre2 
+	| release duration title director genre2 
+	| release cast director title genre2 
+	| release director cast title duration genre2 
+	| release director duration cast title genre2 
+	| release director cast title genre2 
+	| release director duration title cast genre2 
+	| release director duration title genre2 
+	| release director title cast duration genre2 
+	| release director title duration cast genre2 
+	| director release cast title genre duration2 
+	| duration title director release cast genre2 
+	| duration director title release cast genre2 
+	| duration director title release genre2 
+	| duration title cast release director genre2 
+	| duration title cast director release genre2 
+	| duration title release cast director genre2 
+	| duration title release director cast genre2 
+	| duration title release director genre2 
+	| duration title director cast release genre2 
+	| duration director title cast release genre2 
+	| duration title director release genre2 
+	| release cast duration director title genre2 
+	| release cast duration title director genre2 
+	| release cast director duration title genre2 
+	| release cast director title duration genre2 
+	| release cast title duration director genre2 
+	| release cast title director duration genre2 
+	| release duration cast director title genre2 
+	| title cast director release genre duration2 
+	| director title release genre duration2 
+	| director title release cast duration2 
+	| director title release duration2 
+	| title cast genre release director duration2 
+	| title cast genre director release duration2 
+	| title cast release genre director duration2 
+	| title cast release director genre duration2 
+	| title cast director genre release duration2 
+	| director title release genre cast duration2 
+	| title genre cast release director duration2 
+	| title cast release director duration2 
+	| title genre cast director release duration2 
+	| title cast director release duration2 
+	| title genre release cast director duration2 
+	| title genre release director cast duration2 
+	| title genre release director duration2 
+	| title genre director cast release duration2 
+	| director release title cast duration2 
+	| duration title genre director cast release2 
+	| director release genre cast title duration2 
+	| director release cast title duration2 
+	| director release genre title cast duration2 
+	| director release genre title duration2 
+	| director release title cast genre duration2 
+	| director release title genre cast duration2 
+	| director release title genre duration2 
+	| title genre director release cast duration2 
+	| director release title duration2 
+	| director title cast genre release duration2 
+	| director title cast release genre duration2 
+	| director title genre cast release duration2 
+	| director title cast release duration2 
+	| director title genre release cast duration2 
+	| director title genre release duration2 
+	| director title release cast genre duration2 
+	| cast duration director title release genre2 
+	| title director release cast genre duration2 
+	| title director release genre cast duration2 
+	| title director release genre duration2 
+	| title director release cast duration2 
+	| title director release duration2 
+	| cast duration release director title genre2 
+	| cast duration release title director genre2 
+	| cast duration director release title genre2 
+	| title director genre release duration2 
+	| cast duration title release director genre2 
+	| cast duration title director release genre2 
+	| cast release duration director title genre2 
+	| cast release duration title director genre2 
+	| cast release director duration title genre2 
+	| cast release director title duration genre2 
+	| cast release title duration director genre2 
+	| cast release title director duration genre2 
+	| title release director genre cast duration2 
+	| title genre director release duration2 
+	| title release cast genre director duration2 
+	| title release cast director genre duration2 
+	| title release genre cast director duration2 
+	| title release cast director duration2 
+	| title release genre director cast duration2 
+	| title release genre director duration2 
+	| title release director cast genre duration2 
+	| cast director duration release title genre2 
+	| title release director genre duration2 
+	| title release director cast duration2 
+	| title release director duration2 
+	| title director cast genre release duration2 
+	| title director cast release genre duration2 
+	| title director genre cast release duration2 
+	| title director cast release duration2 
+	| title director genre release cast duration2 
+	| cast genre title director duration release2 
+	| cast duration director genre title release2 
+	| cast duration director title genre release2 
+	| cast duration title genre director release2 
+	| cast duration title director genre release2 
+	| cast genre duration director title release2 
+	| cast genre duration title director release2 
+	| cast genre director duration title release2 
+	| cast genre director title duration release2 
+	| cast genre title duration director release2 
+	| cast duration genre title director release2 
+	| cast director duration genre title release2 
+	| cast director duration title genre release2 
+	| cast director genre duration title release2 
+	| cast director genre title duration release2 
+	| cast director title duration genre release2 
+	| cast director title genre duration release2 
+	| cast title duration genre director release2 
+	| cast title duration director genre release2 
+	| title director cast release genre2 
+	| title release director cast duration genre2 
+	| title release director duration cast genre2 
+	| title release director duration genre2 
+	| title release director cast genre2 
+	| title release director genre2 
+	| title director cast duration release genre2 
+	| title director cast release duration genre2 
+	| title director duration cast release genre2 
+	| cast title genre duration director release2 
+	| title director duration release cast genre2 
+	| title director duration release genre2 
+	| title director release cast duration genre2 
+	| title director release duration cast genre2 
+	| title director release duration genre2 
+	| title director release cast genre2 
+	| title director release genre2 
+	| cast duration genre director title release2 
+	| duration director genre title cast release2 
+	| duration genre director title cast release2 
+	| duration genre director title release2 
+	| duration genre title cast director release2 
+	| duration genre title director cast release2 
+	| duration genre title director release2 
+	| duration director cast genre title release2 
+	| duration director cast title genre release2 
+	| duration director genre cast title release2 
+	| duration genre director cast title release2 
+	| duration director genre title release2 
+	| duration director title cast genre release2 
+	| duration director title genre cast release2 
+	| duration director title genre release2 
+	| duration title cast genre director release2 
+	| duration title cast director genre release2 
+	| duration title genre cast director release2 
+	| director release title2 
+	| cast director genre title release2 
+	| cast title genre director duration release2 
+	| cast title director duration genre release2 
+	| cast title director genre duration release2 
+	| duration cast genre director title release2 
+	| cast genre director title release2 
+	| duration cast genre title director release2 
+	| cast genre title director release2 
+	| duration cast director genre title release2 
+	| title release duration director genre2 
+	| duration cast director title genre release2 
+	| cast director title genre release2 
+	| duration cast title genre director release2 
+	| cast title genre director release2 
+	| duration cast title director genre release2 
+	| cast title director genre release2 
+	| duration genre cast director title release2 
+	| duration genre cast title director release2 
+	| director duration title release cast genre2 
+	| director duration cast release title genre2 
+	| director cast release title genre2 
+	| director duration cast title release genre2 
+	| director cast title release genre2 
+	| director duration release cast title genre2 
+	| director duration release title cast genre2 
+	| director duration release title genre2 
+	| director duration title cast release genre2 
+	| director cast title release duration genre2 
+	| director duration title release genre2 
+	| director release cast duration title genre2 
+	| director release cast title duration genre2 
+	| director release duration cast title genre2 
+	| director release cast title genre2 
+	| director release duration title cast genre2 
+	| director release duration title genre2 
+	| director release title cast duration genre2 
+	| release title director duration cast genre2 
+	| release director title genre2 
+	| release title cast duration director genre2 
+	| release title cast director duration genre2 
+	| release title duration cast director genre2 
+	| release title cast director genre2 
+	| release title duration director cast genre2 
+	| release title duration director genre2 
+	| release title director cast duration genre2 
+	| director release title duration cast genre2 
+	| release title director duration genre2 
+	| release title director cast genre2 
+	| release title director genre2 
+	| director cast duration release title genre2 
+	| director cast duration title release genre2 
+	| director cast release duration title genre2 
+	| director cast release title duration genre2 
+	| director cast title duration release genre2 
+	| title duration release director genre2 
+	| title cast director duration release genre2 
+	| title cast director release duration genre2 
+	| title duration cast release director genre2 
+	| title cast release director genre2 
+	| title duration cast director release genre2 
+	| title cast director release genre2 
+	| title duration release cast director genre2 
+	| title duration release director cast genre2 
+	| title cast release director duration genre2 
+	| title duration director cast release genre2 
+	| title duration director release cast genre2 
+	| title duration director release genre2 
+	| title release cast duration director genre2 
+	| title release cast director duration genre2 
+	| title release duration cast director genre2 
+	| title release cast director genre2 
+	| title release duration director cast genre2 
+	| director title duration release genre2 
+	| director release title duration genre2 
+	| director release title cast genre2 
+	| director release title genre2 
+	| director title cast duration release genre2 
+	| director title cast release duration genre2 
+	| director title duration cast release genre2 
+	| director title cast release genre2 
+	| director title duration release cast genre2 
+	| release director title cast genre2 
+	| director title release cast duration genre2 
+	| director title release duration cast genre2 
+	| director title release duration genre2 
+	| director title release cast genre2 
+	| director title release genre2 
+	| title cast duration release director genre2 
+	| title cast duration director release genre2 
+	| title cast release duration director genre2 
+	| director duration genre title release cast2 
+	| release title duration director cast2 
+	| release title genre director duration cast2 
+	| release title genre director cast2 
+	| release title director duration genre cast2 
+	| release title director genre duration cast2 
+	| release title director genre cast2 
+	| release title director duration cast2 
+	| release title director cast2 
+	| director duration genre release title cast2 
+	| release title genre duration director cast2 
+	| director duration release genre title cast2 
+	| director duration release title genre cast2 
+	| director duration title genre release cast2 
+	| director duration title release genre cast2 
+	| director genre duration release title cast2 
+	| director duration release title cast2 
+	| director genre duration title release cast2 
+	| director duration title release cast2 
+	| release director genre title duration cast2 
+	| release genre director title cast2 
+	| release genre title duration director cast2 
+	| release genre title director duration cast2 
+	| release genre title director cast2 
+	| release director duration genre title cast2 
+	| release director duration title genre cast2 
+	| release director genre duration title cast2 
+	| release director duration title cast2 
+	| director genre release duration title cast2 
+	| release director genre title cast2 
+	| release director title duration genre cast2 
+	| release director title genre duration cast2 
+	| release director title genre cast2 
+	| release director title duration cast2 
+	| release director title cast2 
+	| release title duration genre director cast2 
+	| release title duration director genre cast2 
+	| director title release cast2 
+	| director title genre duration release cast2 
+	| director title duration release cast2 
+	| director title genre release duration cast2 
+	| director title genre release cast2 
+	| director title release duration genre cast2 
+	| director title release genre duration cast2 
+	| director title release genre cast2 
+	| director title release duration cast2 
+	| director title duration release genre cast2 
+	| title duration genre release director cast2 
+	| title duration genre director release cast2 
+	| title duration release genre director cast2 
+	| title duration release director genre cast2 
+	| title duration director genre release cast2 
+	| title duration director release genre cast2 
+	| title genre duration release director cast2 
+	| title duration release director cast2 
+	| director release duration title cast2 
+	| director genre release title duration cast2 
+	| director genre release title cast2 
+	| director genre title duration release cast2 
+	| director genre title release duration cast2 
+	| director genre title release cast2 
+	| director release duration genre title cast2 
+	| director release duration title genre cast2 
+	| director release genre duration title cast2 
+	| release genre director title duration cast2 
+	| director release genre title duration cast2 
+	| director release genre title cast2 
+	| director release title duration genre cast2 
+	| director release title genre duration cast2 
+	| director release title genre cast2 
+	| director release title duration cast2 
+	| director release title cast2 
+	| director title duration genre release cast2 
+	| genre duration release title director cast2 
+	| duration title genre release director cast2 
+	| duration title genre director release cast2 
+	| duration title release genre director cast2 
+	| duration title release director genre cast2 
+	| duration title director genre release cast2 
+	| duration title director release genre cast2 
+	| genre duration release director title cast2 
+	| duration release director title cast2 
+	| duration director title release genre cast2 
+	| duration release title director cast2 
+	| genre duration director release title cast2 
+	| duration director release title cast2 
+	| genre duration director title release cast2 
+	| duration director title release cast2 
+	| genre duration title release director cast2 
+	| duration title release director cast2 
+	| genre duration title director release cast2 
+	| duration release director genre title cast2 
+	| duration genre release director title cast2 
+	| duration genre release title director cast2 
+	| duration genre director release title cast2 
+	| duration genre director title release cast2 
+	| duration genre title release director cast2 
+	| duration genre title director release cast2 
+	| duration release genre director title cast2 
+	| duration release genre title director cast2 
+	| duration title director release cast2 
+	| duration release director title genre cast2 
+	| duration release title genre director cast2 
+	| duration release title director genre cast2 
+	| duration director genre release title cast2 
+	| duration director genre title release cast2 
+	| duration director release genre title cast2 
+	| duration director release title genre cast2 
+	| duration director title genre release cast2 
+	| release duration director genre title cast2 
+	| genre title release duration director cast2 
+	| genre title release director duration cast2 
+	| genre title release director cast2 
+	| genre title director duration release cast2 
+	| genre title director release duration cast2 
+	| genre title director release cast2 
+	| release duration genre director title cast2 
+	| release duration genre title director cast2 
+	| genre title duration director release cast2 
+	| release duration director title genre cast2 
+	| release duration title genre director cast2 
+	| release duration title director genre cast2 
+	| release genre duration director title cast2 
+	| release duration director title cast2 
+	| release genre duration title director cast2 
+	| release duration title director cast2 
+	| release genre director duration title cast2 
+	| genre director duration release title cast2 
+	| genre release duration director title cast2 
+	| genre release duration title director cast2 
+	| genre release director duration title cast2 
+	| genre release director title duration cast2 
+	| genre release director title cast2 
+	| genre release title duration director cast2 
+	| genre release title director duration cast2 
+	| genre release title director cast2 
+	| title genre duration director release cast2 
+	| genre director duration title release cast2 
+	| genre director release duration title cast2 
+	| genre director release title duration cast2 
+	| genre director release title cast2 
+	| genre director title duration release cast2 
+	| genre director title release duration cast2 
+	| genre director title release cast2 
+	| genre title duration release director cast2 
+	| release cast title director duration2 
+	| release cast genre title director duration2 
+	| release cast director genre title duration2 
+	| release cast director title genre duration2 
+	| release cast title genre director duration2 
+	| release cast title director genre duration2 
+	| release genre cast director title duration2 
+	| release cast director title duration2 
+	| release genre cast title director duration2 
+	| release cast genre director title duration2 
+	| release genre director cast title duration2 
+	| release genre director title cast duration2 
+	| release genre director title duration2 
+	| release genre title cast director duration2 
+	| release genre title director cast duration2 
+	| release genre title director duration2 
+	| release director cast genre title duration2 
+	| release director cast title genre duration2 
+	| genre director title release duration2 
+	| genre release title director duration2 
+	| genre director cast release title duration2 
+	| genre director cast title release duration2 
+	| genre director release cast title duration2 
+	| genre director release title cast duration2 
+	| genre director release title duration2 
+	| genre director title cast release duration2 
+	| genre director title release cast duration2 
+	| release director genre cast title duration2 
+	| genre title cast release director duration2 
+	| genre title cast director release duration2 
+	| genre title release cast director duration2 
+	| genre title release director cast duration2 
+	| genre title release director duration2 
+	| genre title director cast release duration2 
+	| genre title director release cast duration2 
+	| genre title director release duration2 
+	| director cast release title duration2 
+	| release title director duration2 
+	| director cast genre release title duration2 
+	| director cast genre title release duration2 
+	| director cast release genre title duration2 
+	| director cast release title genre duration2 
+	| director cast title genre release duration2 
+	| director cast title release genre duration2 
+	| director genre cast release title duration2 
+	| release title director cast duration2 
+	| director genre cast title release duration2 
+	| director cast title release duration2 
+	| director genre release cast title duration2 
+	| director genre release title cast duration2 
+	| director genre release title duration2 
+	| director genre title cast release duration2 
+	| director genre title release cast duration2 
+	| director genre title release duration2 
+	| release title cast genre director duration2 
+	| release director cast title duration2 
+	| release director genre title cast duration2 
+	| release director genre title duration2 
+	| release director title cast genre duration2 
+	| release director title genre cast duration2 
+	| release director title genre duration2 
+	| release director title cast duration2 
+	| release director title duration2 
+	| genre release title director cast duration2 
+	| release title cast director genre duration2 
+	| release title genre cast director duration2 
+	| release title cast director duration2 
+	| release title genre director cast duration2 
+	| release title genre director duration2 
+	| release title director cast genre duration2 
+	| release title director genre cast duration2 
+	| release title director genre duration2 
+	| title director release genre cast2 
+	| title director duration genre release cast2 
+	| title director duration release genre cast2 
+	| title director genre duration release cast2 
+	| title director duration release cast2 
+	| title director genre release duration cast2 
+	| title director genre release cast2 
+	| title director release duration genre cast2 
+	| title director release genre duration cast2 
+	| title release director cast2 
+	| title director release duration cast2 
+	| title director release cast2 
+	| cast genre release director title duration2 
+	| cast genre release title director duration2 
+	| cast genre director release title duration2 
+	| cast genre director title release duration2 
+	| cast genre title release director duration2 
+	| cast genre title director release duration2 
+	| title release duration director genre cast2 
+	| title duration director release cast2 
+	| title genre release duration director cast2 
+	| title genre release director duration cast2 
+	| title genre release director cast2 
+	| title genre director duration release cast2 
+	| title genre director release duration cast2 
+	| title genre director release cast2 
+	| title release duration genre director cast2 
+	| cast release genre director title duration2 
+	| title release genre duration director cast2 
+	| title release duration director cast2 
+	| title release genre director duration cast2 
+	| title release genre director cast2 
+	| title release director duration genre cast2 
+	| title release director genre duration cast2 
+	| title release director genre cast2 
+	| title release director duration cast2 
+	| cast title release director duration2 
+	| cast release director title duration2 
+	| genre cast release title director duration2 
+	| cast release title director duration2 
+	| genre cast director release title duration2 
+	| cast director release title duration2 
+	| genre cast director title release duration2 
+	| cast director title release duration2 
+	| genre cast title release director duration2 
+	| genre cast release director title duration2 
+	| genre cast title director release duration2 
+	| cast title director release duration2 
+	| genre release cast director title duration2 
+	| genre release cast title director duration2 
+	| genre release director cast title duration2 
+	| genre release director title cast duration2 
+	| genre release director title duration2 
+	| genre release title cast director duration2 
+	| cast director release title genre duration2 
+	| cast release genre title director duration2 
+	| cast release director genre title duration2 
+	| cast release director title genre duration2 
+	| cast release title genre director duration2 
+	| cast release title director genre duration2 
+	| cast director genre release title duration2 
+	| cast director genre title release duration2 
+	| cast director release genre title duration2 
+	| director release cast genre title duration2 
+	| cast director title genre release duration2 
+	| cast director title release genre duration2 
+	| cast title genre release director duration2 
+	| cast title genre director release duration2 
+	| cast title release genre director duration2 
+	| cast title release director genre duration2 
+	| cast title director genre release duration2 
+	| cast title director release genre duration2 
+	| cast director genre release duration title2 
+	| cast release duration genre director title2 
+	| cast release duration director genre title2 
+	| cast release genre duration director title2 
+	| cast release genre director duration title2 
+	| cast release director duration genre title2 
+	| cast release director genre duration title2 
+	| cast director duration genre release title2 
+	| cast director duration release genre title2 
+	| cast director genre duration release title2 
+	| cast genre director release duration title2 
+	| cast director release duration genre title2 
+	| cast director release genre duration title2 
+	| duration cast genre release director title2 
+	| cast genre release director title2 
+	| duration cast genre director release title2 
+	| cast genre director release title2 
+	| duration cast release genre director title2 
+	| cast release genre director title2 
+	| cast duration release genre director title2 
+	| title release genre cast director2 
+	| title release genre director2 
+	| title release duration cast director2 
+	| title release duration director2 
+	| title release cast director2 
+	| title release director2 
+	| cast duration genre release director title2 
+	| cast duration genre director release title2 
+	| duration cast release director genre title2 
+	| cast duration release director genre title2 
+	| cast duration director genre release title2 
+	| cast duration director release genre title2 
+	| cast genre duration release director title2 
+	| cast genre duration director release title2 
+	| cast genre release duration director title2 
+	| cast genre release director duration title2 
+	| cast genre director duration release title2 
+	| duration director release cast genre title2 
+	| duration release director cast genre title2 
+	| duration release director genre cast title2 
+	| duration release director genre title2 
+	| duration director cast genre release title2 
+	| duration director cast release genre title2 
+	| duration director genre cast release title2 
+	| duration director genre release cast title2 
+	| duration director genre release title2 
+	| duration release genre director title2 
+	| duration director release genre cast title2 
+	| duration director release genre title2 
+	| genre cast duration release director title2 
+	| cast duration release director title2 
+	| genre cast duration director release title2 
+	| cast duration director release title2 
+	| genre cast release duration director title2 
+	| cast release duration director title2 
+	| duration genre release director cast title2 
+	| cast release director genre title2 
+	| duration cast director genre release title2 
+	| cast director genre release title2 
+	| duration cast director release genre title2 
+	| cast director release genre title2 
+	| duration genre cast release director title2 
+	| duration genre cast director release title2 
+	| duration genre release cast director title2 
+	| title release genre duration director2 
+	| duration genre release director title2 
+	| duration genre director cast release title2 
+	| duration genre director release cast title2 
+	| duration genre director release title2 
+	| duration release cast genre director title2 
+	| duration release cast director genre title2 
+	| duration release genre cast director title2 
+	| duration release genre director cast title2 
+	| release title duration director2 
+	| release title duration genre director2 
+	| release title genre cast duration director2 
+	| release title cast duration director2 
+	| release title genre duration cast director2 
+	| release title genre duration director2 
+	| release title genre cast director2 
+	| release title genre director2 
+	| release title duration cast director2 
+	| release title duration genre cast director2 
+	| release title cast director2 
+	| release title director2 
+	| title cast duration genre release director2 
+	| title cast duration release genre director2 
+	| title cast genre duration release director2 
+	| title cast genre release duration director2 
+	| title cast release duration genre director2 
+	| title cast release genre duration director2 
+	| release genre title cast duration director2 
+	| release genre duration cast title director2 
+	| release genre cast title director2 
+	| release duration cast title director2 
+	| release cast title director2 
+	| release genre duration title cast director2 
+	| release genre duration title director2 
+	| release duration title cast director2 
+	| release duration title director2 
+	| title duration cast genre release director2 
+	| release genre title duration cast director2 
+	| release genre title duration director2 
+	| release genre title cast director2 
+	| release genre title director2 
+	| release title cast duration genre director2 
+	| release title cast genre duration director2 
+	| release title duration cast genre director2 
+	| release title cast genre director2 
+	| title release cast duration genre director2 
+	| title genre duration release director2 
+	| title duration release cast director2 
+	| title duration release director2 
+	| title genre release cast duration director2 
+	| title genre release duration cast director2 
+	| title genre release duration director2 
+	| title genre release cast director2 
+	| title genre release director2 
+	| title genre duration release cast director2 
+	| title release cast genre duration director2 
+	| title release duration cast genre director2 
+	| title release cast genre director2 
+	| title release duration genre cast director2 
+	| title release duration genre director2 
+	| title release genre cast duration director2 
+	| title release cast duration director2 
+	| title release genre duration cast director2 
+	| title duration release genre director2 
+	| title cast genre release director2 
+	| title duration cast release genre director2 
+	| title cast release genre director2 
+	| title duration genre cast release director2 
+	| title duration genre release cast director2 
+	| title duration genre release director2 
+	| title duration release cast genre director2 
+	| title duration release genre cast director2 
+	| genre cast release director duration title2 
+	| title genre cast duration release director2 
+	| title cast duration release director2 
+	| title genre cast release duration director2 
+	| title cast release duration director2 
+	| title genre duration cast release director2 
+	| title genre cast release director2 
+	| title duration cast release director2 
+	| title cast release director2 
+	| director cast genre release duration title2 
+	| release director genre cast title2 
+	| release director genre title2 
+	| release director duration cast title2 
+	| release director duration title2 
+	| release director cast title2 
+	| release director title2 
+	| director cast duration genre release title2 
+	| director cast duration release genre title2 
+	| director cast genre duration release title2 
+	| release director genre duration title2 
+	| director cast release duration genre title2 
+	| director cast release genre duration title2 
+	| director duration cast genre release title2 
+	| director cast genre release title2 
+	| director duration cast release genre title2 
+	| director cast release genre title2 
+	| director duration genre cast release title2 
+	| director duration genre release cast title2 
+	| release director cast duration genre title2 
+	| release genre duration director title2 
+	| release duration director cast title2 
+	| release duration director title2 
+	| release genre director cast duration title2 
+	| release genre director duration cast title2 
+	| release genre director duration title2 
+	| release genre director cast title2 
+	| release genre director title2 
+	| director duration genre release title2 
+	| release director cast genre duration title2 
+	| release director duration cast genre title2 
+	| release director cast genre title2 
+	| release director duration genre cast title2 
+	| release director duration genre title2 
+	| release director genre cast duration title2 
+	| release director cast duration title2 
+	| release director genre duration cast title2 
+	| director release genre cast duration title2 
+	| director genre release cast title2 
+	| director genre release title2 
+	| director release cast duration genre title2 
+	| director release cast genre duration title2 
+	| director release duration cast genre title2 
+	| director release cast genre title2 
+	| director release duration genre cast title2 
+	| director release duration genre title2 
+	| director genre release duration title2 
+	| director release cast duration title2 
+	| director release genre duration cast title2 
+	| director release genre duration title2 
+	| director release genre cast title2 
+	| director release genre title2 
+	| director release duration cast title2 
+	| director release duration title2 
+	| director release cast title2 
+	| director genre cast release title2 
+	| director duration release cast genre title2 
+	| director duration release genre cast title2 
+	| director duration release genre title2 
+	| director genre cast duration release title2 
+	| director cast duration release title2 
+	| director genre cast release duration title2 
+	| director cast release duration title2 
+	| director genre duration cast release title2 
+	| release genre duration director cast title2 
+	| director duration cast release title2 
+	| director cast release title2 
+	| director genre duration release cast title2 
+	| director genre duration release title2 
+	| director duration release cast title2 
+	| director duration release title2 
+	| director genre release cast duration title2 
+	| director genre release duration cast title2 
+	| genre release cast director duration title2 
+	| duration release director title2 
+	| genre duration director cast release title2 
+	| duration director cast release title2 
+	| genre duration director release cast title2 
+	| genre duration director release title2 
+	| duration director release cast title2 
+	| duration director release title2 
+	| genre release cast duration director title2 
+	| duration release director cast title2 
+	| genre release duration cast director title2 
+	| genre release cast director title2 
+	| genre release duration director cast title2 
+	| genre release duration director title2 
+	| genre release director cast duration title2 
+	| genre release director duration cast title2 
+	| genre release director duration title2 
+	| genre release director cast title2 
+	| cast release director title2 
+	| cast release director duration title2 
+	| genre cast director duration release title2 
+	| cast director duration release title2 
+	| genre cast director release duration title2 
+	| cast director release duration title2 
+	| genre duration cast release director title2 
+	| genre cast release director title2 
+	| duration cast release director title2 
+	| genre release director title2 
+	| genre duration cast director release title2 
+	| genre cast director release title2 
+	| duration cast director release title2 
+	| cast director release title2 
+	| genre duration release cast director title2 
+	| duration release cast director title2 
+	| genre duration release director cast title2 
+	| genre duration release director title2 
+	| release duration director genre title2 
+	| release cast genre director title2 
+	| release duration cast director genre title2 
+	| release cast director genre title2 
+	| release duration genre cast director title2 
+	| release duration genre director cast title2 
+	| release duration genre director title2 
+	| release duration director cast genre title2 
+	| release duration director genre cast title2 
+	| release duration cast genre director title2 
+	| release genre cast duration director title2 
+	| release cast duration director title2 
+	| release genre cast director duration title2 
+	| release cast director duration title2 
+	| release genre duration cast director title2 
+	| release genre cast director title2 
+	| release duration cast director title2 
+	| release cast director title2 
+	| genre director release duration title2 
+	| genre director cast duration release title2 
+	| genre director cast release duration title2 
+	| genre director duration cast release title2 
+	| genre director cast release title2 
+	| genre director duration release cast title2 
+	| genre director duration release title2 
+	| genre director release cast duration title2 
+	| genre director release duration cast title2 
+	| duration title director cast genre release2 
+	| genre director release cast title2 
+	| genre director release title2 
+	| release cast duration genre director title2 
+	| release cast duration director genre title2 
+	| release cast genre duration director title2 
+	| release cast genre director duration title2 
+	| release cast director duration genre title2 
+	| release cast director genre duration title2 
+	| director title genre duration release2 
+	| director title cast duration genre release2 
+	| director title cast genre duration release2 
+	| director title duration cast genre release2 
+	| director title cast genre release2 
+	| director title duration genre cast release2 
+	| director title duration genre release2 
+	| director title genre cast duration release2 
+	| director title cast duration release2 
+	| director title genre duration cast release2 
+	| director genre title release2 
+	| director title genre cast release2 
+	| director title genre release2 
+	| director title duration cast release2 
+	| director title duration release2 
+	| director title cast release2 
+	| director title release2 
+	| title cast duration genre director release2 
+	| title cast duration director genre release2 
+	| director cast title release2 
+	| director duration title genre release2 
+	| director genre cast duration title release2 
+	| director cast duration title release2 
+	| director genre cast title duration release2 
+	| director cast title duration release2 
+	| director genre duration cast title release2 
+	| director genre cast title release2 
+	| director duration cast title release2 
+	| title cast genre duration director release2 
+	| director genre duration title cast release2 
+	| director genre duration title release2 
+	| director duration title cast release2 
+	| director duration title release2 
+	| director genre title cast duration release2 
+	| director genre title duration cast release2 
+	| director genre title duration release2 
+	| director genre title cast release2 
+	| title genre director duration cast release2 
+	| title genre cast director release2 
+	| title duration cast director release2 
+	| title cast director release2 
+	| title genre duration director cast release2 
+	| title genre duration director release2 
+	| title duration director cast release2 
+	| title duration director release2 
+	| title genre director cast duration release2 
+	| title genre duration cast director release2 
+	| title genre director duration release2 
+	| title genre director cast release2 
+	| title genre director release2 
+	| title director cast duration genre release2 
+	| title director cast genre duration release2 
+	| title director duration cast genre release2 
+	| title director cast genre release2 
+	| title director duration genre cast release2 
+	| title duration genre director cast release2 
+	| title cast genre director duration release2 
+	| title cast director duration genre release2 
+	| title cast director genre duration release2 
+	| title duration cast genre director release2 
+	| title cast genre director release2 
+	| title duration cast director genre release2 
+	| title cast director genre release2 
+	| title duration genre cast director release2 
+	| director duration title genre cast release2 
+	| title duration genre director release2 
+	| title duration director cast genre release2 
+	| title duration director genre cast release2 
+	| title duration director genre release2 
+	| title genre cast duration director release2 
+	| title cast duration director release2 
+	| title genre cast director duration release2 
+	| title cast director duration release2 
+	| genre duration director title release2 
+	| cast director title release2 
+	| genre duration cast title director release2 
+	| genre cast title director release2 
+	| duration cast title director release2 
+	| cast title director release2 
+	| genre duration director cast title release2 
+	| duration director cast title release2 
+	| genre duration director title cast release2 
+	| duration cast director title release2 
+	| duration director title cast release2 
+	| duration director title release2 
+	| genre duration title cast director release2 
+	| duration title cast director release2 
+	| genre duration title director cast release2 
+	| genre duration title director release2 
+	| duration title director cast release2 
+	| duration title director release2 
+	| cast director duration title release2 
+	| duration title genre director release2 
+	| duration title director genre cast release2 
+	| duration title director genre release2 
+	| genre cast duration director title release2 
+	| cast duration director title release2 
+	| genre cast duration title director release2 
+	| cast duration title director release2 
+	| genre cast director duration title release2 
+	| genre director cast duration title release2 
+	| genre cast director title duration release2 
+	| cast director title duration release2 
+	| genre cast title duration director release2 
+	| cast title duration director release2 
+	| genre cast title director duration release2 
+	| cast title director duration release2 
+	| genre duration cast director title release2 
+	| genre cast director title release2 
+	| director cast title genre duration release2 
+	| genre title director duration release2 
+	| genre title director cast release2 
+	| genre title director release2 
+	| director cast duration genre title release2 
+	| director cast duration title genre release2 
+	| director cast genre duration title release2 
+	| director cast genre title duration release2 
+	| director cast title duration genre release2 
+	| genre title director duration cast release2 
+	| director duration cast genre title release2 
+	| director cast genre title release2 
+	| director duration cast title genre release2 
+	| director cast title genre release2 
+	| director duration genre cast title release2 
+	| director duration genre title cast release2 
+	| director duration genre title release2 
+	| director duration title cast genre release2 
+	| genre director title cast release2 
+	| genre director cast title duration release2 
+	| genre director duration cast title release2 
+	| genre director cast title release2 
+	| genre director duration title cast release2 
+	| genre director duration title release2 
+	| genre director title cast duration release2 
+	| genre director title duration cast release2 
+	| genre director title duration release2 
+	| release genre cast title duration director2 
+	| genre director title release2 
+	| genre title cast duration director release2 
+	| genre title cast director duration release2 
+	| genre title duration cast director release2 
+	| genre title cast director release2 
+	| genre title duration director cast release2 
+	| genre title duration director release2 
+	| genre title director cast duration release2 
+	| genre duration title release cast director2 
+	| genre duration release cast title director2 
+	| duration release cast title director2 
+	| genre duration release title cast director2 
+	| genre duration release title director2 
+	| duration release title cast director2 
+	| duration release title director2 
+	| genre duration title cast release director2 
+	| duration title cast release director2 
+	| cast title release director2 
+	| genre duration title release director2 
+	| duration title release cast director2 
+	| duration title release director2 
+	| genre release cast duration title director2 
+	| genre release cast title duration director2 
+	| genre release duration cast title director2 
+	| genre release cast title director2 
+	| genre release duration title cast director2 
+	| genre cast title release duration director2 
+	| genre cast duration title release director2 
+	| cast duration title release director2 
+	| genre cast release duration title director2 
+	| cast release duration title director2 
+	| genre cast release title duration director2 
+	| cast release title duration director2 
+	| genre cast title duration release director2 
+	| cast title duration release director2 
+	| genre release duration title director2 
+	| cast title release duration director2 
+	| genre duration cast release title director2 
+	| genre cast release title director2 
+	| duration cast release title director2 
+	| cast release title director2 
+	| genre duration cast title release director2 
+	| genre cast title release director2 
+	| duration cast title release director2 
+	| release duration genre cast title director2 
+	| release cast genre duration title director2 
+	| release cast genre title duration director2 
+	| release cast title duration genre director2 
+	| release cast title genre duration director2 
+	| release duration cast genre title director2 
+	| release cast genre title director2 
+	| release duration cast title genre director2 
+	| release cast title genre director2 
+	| release cast duration title genre director2 
+	| release duration genre title cast director2 
+	| release duration genre title director2 
+	| release duration title cast genre director2 
+	| release duration title genre cast director2 
+	| release duration title genre director2 
+	| release genre cast duration title director2 
+	| release cast duration title director2 
+	| release cast title duration director2 
+	| genre title cast release director2 
+	| genre release title cast duration director2 
+	| genre release title duration cast director2 
+	| genre release title duration director2 
+	| genre release title cast director2 
+	| genre release title director2 
+	| genre title cast duration release director2 
+	| genre title cast release duration director2 
+	| genre title duration cast release director2 
+	| title director genre cast duration release2 
+	| genre title duration release cast director2 
+	| genre title duration release director2 
+	| genre title release cast duration director2 
+	| genre title release duration cast director2 
+	| genre title release duration director2 
+	| genre title release cast director2 
+	| genre title release director2 
+	| release cast duration genre title director2 
+	| cast release title duration genre director2 
+	| cast genre release duration title director2 
+	| cast genre release title duration director2 
+	| cast genre title duration release director2 
+	| cast genre title release duration director2 
+	| cast release duration genre title director2 
+	| cast release duration title genre director2 
+	| cast release genre duration title director2 
+	| cast release genre title duration director2 
+	| cast genre duration title release director2 
+	| cast release title genre duration director2 
+	| cast title duration genre release director2 
+	| cast title duration release genre director2 
+	| cast title genre duration release director2 
+	| cast title genre release duration director2 
+	| cast title release duration genre director2 
+	| cast title release genre duration director2 
+	| duration cast genre release title director2 
+	| title director cast release2 
+	| title director duration genre release2 
+	| title director cast duration release2 
+	| title director genre duration cast release2 
+	| title director genre duration release2 
+	| title director genre cast release2 
+	| title director genre release2 
+	| title director duration cast release2 
+	| title director duration release2 
+	| genre cast duration release title director2 
+	| title director release2 
+	| cast duration genre release title director2 
+	| cast duration genre title release director2 
+	| cast duration release genre title director2 
+	| cast duration release title genre director2 
+	| cast duration title genre release director2 
+	| cast duration title release genre director2 
+	| cast genre duration release title director2 
+	| duration title cast genre release director2 
+	| duration release cast genre title director2 
+	| duration release cast title genre director2 
+	| duration release genre cast title director2 
+	| duration release genre title cast director2 
+	| duration release genre title director2 
+	| duration release title cast genre director2 
+	| duration release title genre cast director2 
+	| duration release title genre director2 
+	| duration cast genre title release director2 
+	| duration title cast release genre director2 
+	| duration title genre cast release director2 
+	| duration title genre release cast director2 
+	| duration title genre release director2 
+	| duration title release cast genre director2 
+	| duration title release genre cast director2 
+	| duration title release genre director2 
+	| cast duration release title director2 
+	| duration genre title release cast director2 
+	| cast genre release title director2 
+	| cast genre title release director2 
+	| duration cast release genre title director2 
+	| cast release genre title director2 
+	| duration cast release title genre director2 
+	| cast release title genre director2 
+	| duration cast title genre release director2 
+	| cast title genre release director2 
+	| cast title release genre director2 
+	| duration genre cast release title director2 
+	| duration genre cast title release director2 
+	| duration genre release cast title director2 
+	| duration genre release title cast director2 
+	| duration genre release title director2 
+	| duration genre title cast release director2 
+	| duration genre title release director2 
+	| duration cast title release genre director2 
+	;
+
+title
+	: title2 , 
+	;
+
+director
+	: director2 , 
+	;
+
+release
+	: release2 , 
+	;
+
+genre
+	: genre2 , 
+	;
+
+duration
+	: duration2 , 
+	;
+
+cast
+	: cast2 , 
+	;
+
+title2
+	: TITLE : STRING 
+	;
+
+director2
+	: DIRECTOR : STRING 
+	;
+
+release2
+	: RELEASEDATE : STRING 
+	;
+
+genre2
+	: GENRE : STRING 
+	;
+
+duration2
+	: DURATION : STRING 
+	;
+
+cast2
+	: CAST : [ ] 
+	| CAST : [ STRING moreCast ] 
+	;
+
+moreCast
+	: , STRING moreCast 
+	| 
+	;

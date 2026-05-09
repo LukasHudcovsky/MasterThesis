@@ -1,0 +1,9 @@
+%tokens
+
+token1
+
+%rules
+
+init
+    : << (token1)? >>
+    ;

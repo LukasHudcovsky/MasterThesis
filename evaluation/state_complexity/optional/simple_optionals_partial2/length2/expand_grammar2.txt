@@ -1,0 +1,12 @@
+%tokens
+
+token1 token2 tokenX 
+
+%rules
+
+init
+	: tokenX 
+	| << token1 >> tokenX 
+	| << token2 >> tokenX 
+	| << token1 || token2 >> tokenX 
+	;

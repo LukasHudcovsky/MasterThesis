@@ -1,0 +1,72 @@
+%tokens
+
+ID LPAREN RPAREN LBRACE RBRACE COMMA SEMICOL RETURN IF WHILE ASSIGN PLUS MINUS MUL DIV NUM EQ LT GT
+
+%rules
+
+program
+    : functions
+    ;
+
+functions
+    : functions function
+    | function
+    ;
+
+function
+    : ID LPAREN param_list RPAREN block
+    ;
+
+param_list
+    : 
+    | params
+    ;
+
+params
+    : params COMMA ID
+    | ID
+    ;
+
+block
+    : LBRACE stmt_list RBRACE
+    | LBRACE RBRACE
+    ;
+
+stmt_list
+    : stmt
+    | stmt stmt_list
+    ;
+
+stmt
+    : expr SEMICOL
+    | RETURN expr SEMICOL
+    | ID ASSIGN expr SEMICOL
+    | IF LPAREN logic RPAREN stmt
+    | WHILE LPAREN logic RPAREN stmt
+    | block
+    ;
+
+expr
+    : expr PLUS factor
+    | expr MINUS factor
+    | factor
+    ;
+    
+factor
+    : factor MUL term
+    | factor DIV term
+    | term
+    ;
+
+term
+    : LPAREN expr RPAREN
+    | ID
+    | NUM
+    ;
+    
+logic
+    : expr EQ expr
+    | expr LT expr
+    | expr GT expr
+    | expr
+    ;

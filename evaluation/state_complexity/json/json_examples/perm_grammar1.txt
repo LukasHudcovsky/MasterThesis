@@ -1,0 +1,73 @@
+%tokens
+
+TITLE DIRECTOR RELEASEDATE GENRE DURATION CAST : { } [ ] , STRING
+
+%rules
+
+init
+    : { object }
+    ;
+
+object
+    : << director || release || (genre)? || (duration)? || (cast)? >> title2
+    | << title || release || (genre)? || (duration)? || (cast)? >> director2
+    | << title || director || (genre)? || (duration)? || (cast)? >> release2
+    | << title || director || release || (duration)? || (cast)? >> genre2
+    | << title || director || release || (genre)? || (cast)? >> duration2
+    | << title || director || release || (genre)? || (duration)? >> cast2
+    ;
+
+title
+    : title2 ,
+    ;
+
+director
+    : director2 ,
+    ;
+
+release
+    : release2 ,
+    ;
+
+genre
+    : genre2 ,
+    ;
+
+duration
+    : duration2 ,
+    ;
+
+cast
+    : cast2 ,
+    ;
+
+title2
+    : TITLE : STRING
+    ;
+
+director2
+    : DIRECTOR : STRING
+    ;
+
+release2
+    : RELEASEDATE : STRING
+    ;
+
+genre2
+    : GENRE : STRING
+    ;
+
+duration2
+    : DURATION : STRING
+    ;
+
+cast2
+    : CAST : [ ]
+    | CAST : [ STRING moreCast ]
+    ;
+
+moreCast
+    : , STRING moreCast
+    | 
+    ;
+

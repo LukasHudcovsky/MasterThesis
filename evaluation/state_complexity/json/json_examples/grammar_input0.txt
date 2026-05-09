@@ -1,0 +1,11 @@
+{  
+    NAME : STRING ,  
+    AGE : INT ,  
+    ADDRESS : {    
+        STREET : STRING ,    
+        CITY : STRING ,    
+        STATE : STRING ,    
+        POSTALCODE : STRING  
+    } ,  
+    HOBBIES : [ STRING , STRING ]
+}

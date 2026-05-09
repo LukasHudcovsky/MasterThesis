@@ -1,0 +1,24 @@
+%tokens
+
+token1 token2 token3 token4 token5 tokenX 
+
+%rules
+
+init
+	: << token5 >> tokenX 
+	| << token1 || token5 >> tokenX 
+	| << token2 || token5 >> tokenX 
+	| << token1 || token2 || token5 >> tokenX 
+	| << token3 || token5 >> tokenX 
+	| << token1 || token3 || token5 >> tokenX 
+	| << token2 || token3 || token5 >> tokenX 
+	| << token1 || token2 || token3 || token5 >> tokenX 
+	| << token4 || token5 >> tokenX 
+	| << token1 || token4 || token5 >> tokenX 
+	| << token2 || token4 || token5 >> tokenX 
+	| << token1 || token2 || token4 || token5 >> tokenX 
+	| << token3 || token4 || token5 >> tokenX 
+	| << token1 || token3 || token4 || token5 >> tokenX 
+	| << token2 || token3 || token4 || token5 >> tokenX 
+	| << token1 || token2 || token3 || token4 || token5 >> tokenX 
+	;

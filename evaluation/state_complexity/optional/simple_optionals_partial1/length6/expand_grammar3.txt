@@ -1,0 +1,16 @@
+%tokens
+
+token1 token2 token3 token4 token5 token6 
+
+%rules
+
+init
+	: << token4 || token5 || token6 >> 
+	| << token1 || token4 || token5 || token6 >> 
+	| << token2 || token4 || token5 || token6 >> 
+	| << token1 || token2 || token4 || token5 || token6 >> 
+	| << token3 || token4 || token5 || token6 >> 
+	| << token1 || token3 || token4 || token5 || token6 >> 
+	| << token2 || token3 || token4 || token5 || token6 >> 
+	| << token1 || token2 || token3 || token4 || token5 || token6 >> 
+	;

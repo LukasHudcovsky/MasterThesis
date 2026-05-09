@@ -1,0 +1,171 @@
+token1 token2 token3
+
+token4 token5 token6 token7 token8 token9
+token7 token8 token9 token4 token5 token6 
+token5 token6 token4 token7 token8 token9
+
+token1 token2 token4 token1 token2
+token4 token1 token2 token1 token2
+
+token10 token1 token2 token3 token4 token5 token6
+token10 token1 token3 token2 token4 token5 token6
+token10 token3 token1 token2 token5 token4 token6
+token10 token2 token1 token3 token6 token4 token5
+token10 token3 token2 token1 token4 token6 token5
+
+
+token11 token3 token2 token1 token11
+token11 token2 token3 token11
+
+token12 token1 token2 token3 token5 token4
+token12 token4 token5
+
+token13 token5 token1 token2 token3 token4 token13
+token13 token5 token4 token13
+
+token14 token6 token4 token5
+token14 token6
+
+token15 token4 token5 token6 token15
+token15 token6 token15
+
+token16 token6 token1 token2 token3
+token16 token4 token5
+token16
+
+token17 token1 token2 token3 token7 token8 token17
+token17 token7 token8 token4 token5 token6 token17
+token17 token17
+
+token18 token4 token5 token6
+token18 token4
+
+token19 token4 token19
+token19 token19
+
+token20 token1 token2 token3
+token20
+
+
+token21 token3 token2 token1
+token21 token2 token1 token3
+
+token22 token2 token3 token1
+token22 token1 token2 token3
+
+token23 token4 token2 token3
+token23 token2 token4 token3
+
+token24 token4 token2 token3
+token24 token3 token4 token2
+
+token25 token2 token3 token4
+token25 token2 token4 token3
+
+token26 token3 token2 token4
+token26 token4 token3 token2
+
+token27 token4 token3 token5
+token27 token5 token3 token4
+
+token28 token3 token4 token5
+token28 token5 token4 token3
+
+token29 token4 token3 token5
+token29 token3 token5 token4
+
+token30 token4 token5 token3
+token30 token5 token3 token4
+
+
+token31 token1 token2 token4 token5
+token31 token5 token1 token2 token4
+
+token32 token1 token2 token5 token4
+token32 token4 token5 token1 token2 
+
+token33 token4 token1 token2 token5
+token33 token5 token1 token4
+token33 token4 token5 token1
+
+token34 token1 token2 token5 token4 
+token34 token4 token1 token5
+
+token35 token1 token2 token4 token5
+token35 token4 token5 token1 token2
+
+token36 token5 token1 token2 token4
+token36 token4 token5 token1 token2 
+
+token37 token4 token1 token2 token5
+token37 token1 token5 token4
+token37 token4 token5 token1
+
+token38 token5 token1 token2 token4 
+token38 token4 token1 token5
+
+token39 token1 token2 token3 token4 token5
+token39 token4 token1 token2 token3 token5
+
+token40 token1 token2 token3 token5 token4
+token40 token4 token2 token3 token5
+
+token41 token5 token4 token1 token2 token3
+token41 token4 token1 token3 token5
+
+token42 token5 token1 token2 token3 token4
+token42 token1 token2 token4 token5
+
+token43 token4 token1 token2 token3 token5
+token43 token4 token2 token3 token5
+token43 token4 token5 token1 token3
+
+token44 token5 token4 token1 token2 token3
+token44 token4 token1 token2 token5
+token44 token1 token3 token4 token5
+token44 token4 token1 token5
+
+token45 token1 token2 token3 token4 token5
+token45 token2 token3 token4 token5
+token45 token5 token4 token1 token2
+token45 token2 token5 token4
+
+token46 token5 token4 token1 token2 token3
+token46 token4 token2 token3 token5
+token46 token1 token3 token4 token5
+token46 token1 token2 token5 token4
+token46 token5 token1 token4
+token46 token4 token5 token2
+
+token47 token1 token2 token3 token4 token5
+token47 token4 token5 token1 token2 token3
+
+token48 token5 token1 token2 token3 token4
+token48 token2 token3 token4 token5
+
+token49 token4 token5 token1 token2 token3
+token49 token4 token1 token3 token5
+
+token50 token1 token2 token3 token4 token5
+token50 token4 token5 token1 token2
+
+token51 token4 token1 token2 token3 token5
+token51 token4 token5 token2 token3
+token51 token4 token1 token3 token5
+
+token52 token5 token1 token2 token3 token4
+token52 token4 token1 token2 token5
+token52 token1 token3 token5 token4
+token52 token4 token1 token5
+
+token53 token1 token2 token3 token4 token5
+token53 token4 token5 token2 token3
+token53 token5 token4 token1 token2
+token53 token5 token2 token4
+
+token54 token5 token4 token1 token2 token3
+token54 token2 token3 token4 token5
+token54 token1 token3 token5 token4 
+token54 token4 token1 token2 token5
+token54 token5 token1 token4
+token54 token5 token4 token2

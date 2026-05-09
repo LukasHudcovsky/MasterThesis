@@ -1,0 +1,9 @@
+%tokens
+
+token1 token2 token3 
+
+%rules
+
+init
+    : << token1 >> << token2 >> << token3 >>
+    ;

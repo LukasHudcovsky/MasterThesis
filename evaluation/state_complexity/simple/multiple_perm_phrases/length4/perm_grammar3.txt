@@ -1,0 +1,9 @@
+%tokens
+
+token1 token2 token3 token4 token5 token6 token7
+
+%rules
+
+init
+    : << token1 || token2 || token3 || token4 >> << token5 || token6 || token7 >>
+    ;

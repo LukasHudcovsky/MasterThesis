@@ -1,0 +1,1639 @@
+%tokens
+
+token1 token2 token3 token4 token5 token6 tokenX 
+
+%rules
+
+init
+	: token5 token2 token6 token4 token1 tokenX 
+	| token5 token4 token6 token2 token1 tokenX 
+	| token3 token5 token4 token6 token1 token2 tokenX 
+	| token5 token4 token6 token1 token2 tokenX 
+	| token3 token5 token4 token2 token6 token1 tokenX 
+	| token5 token4 token2 token6 token1 tokenX 
+	| token3 token5 token4 token2 token1 token6 tokenX 
+	| token5 token4 token2 token1 token6 tokenX 
+	| token3 token5 token4 token1 token6 token2 tokenX 
+	| token5 token4 token1 token6 token2 tokenX 
+	| token3 token5 token4 token1 token2 token6 tokenX 
+	| token5 token4 token1 token2 token6 tokenX 
+	| token3 token5 token2 token6 token4 token1 tokenX 
+	| token3 token5 token4 token6 token2 token1 tokenX 
+	| token3 token5 token2 token6 token1 token4 tokenX 
+	| token5 token2 token6 token1 token4 tokenX 
+	| token3 token5 token2 token4 token6 token1 tokenX 
+	| token5 token2 token4 token6 token1 tokenX 
+	| token3 token5 token2 token4 token1 token6 tokenX 
+	| token5 token2 token4 token1 token6 tokenX 
+	| token3 token5 token2 token1 token6 token4 tokenX 
+	| token5 token2 token1 token6 token4 tokenX 
+	| token3 token5 token2 token1 token4 token6 tokenX 
+	| token5 token2 token1 token4 token6 tokenX 
+	| token3 token5 token1 token6 token4 token2 tokenX 
+	| token5 token1 token6 token4 token2 tokenX 
+	| token3 token5 token6 token2 token1 token4 tokenX 
+	| token3 token5 token6 token4 token2 token1 tokenX 
+	| token3 token6 token4 token2 token1 tokenX 
+	| token5 token6 token4 token2 token1 tokenX 
+	| token6 token4 token2 token1 tokenX 
+	| token3 token5 token6 token4 token1 token2 tokenX 
+	| token3 token6 token4 token1 token2 tokenX 
+	| token5 token6 token4 token1 token2 tokenX 
+	| token6 token4 token1 token2 tokenX 
+	| token3 token5 token6 token2 token4 token1 tokenX 
+	| token3 token6 token2 token4 token1 tokenX 
+	| token5 token6 token2 token4 token1 tokenX 
+	| token6 token2 token4 token1 tokenX 
+	| token3 token5 token1 token6 token2 token4 tokenX 
+	| token3 token6 token2 token1 token4 tokenX 
+	| token5 token6 token2 token1 token4 tokenX 
+	| token6 token2 token1 token4 tokenX 
+	| token3 token5 token6 token1 token4 token2 tokenX 
+	| token3 token6 token1 token4 token2 tokenX 
+	| token5 token6 token1 token4 token2 tokenX 
+	| token6 token1 token4 token2 tokenX 
+	| token3 token5 token6 token1 token2 token4 tokenX 
+	| token3 token6 token1 token2 token4 tokenX 
+	| token5 token6 token1 token2 token4 tokenX 
+	| token6 token1 token2 token4 tokenX 
+	| token4 token5 token6 token2 token1 tokenX 
+	| token3 token4 token6 token1 token5 token2 tokenX 
+	| token3 token6 token1 token5 token2 tokenX 
+	| token4 token6 token1 token5 token2 tokenX 
+	| token6 token1 token5 token2 tokenX 
+	| token3 token4 token6 token1 token2 token5 tokenX 
+	| token3 token6 token1 token2 token5 tokenX 
+	| token4 token6 token1 token2 token5 tokenX 
+	| token6 token1 token2 token5 tokenX 
+	| token3 token4 token5 token6 token2 token1 tokenX 
+	| token3 token4 token6 token2 token1 tokenX 
+	| token3 token5 token6 token2 token1 tokenX 
+	| token3 token6 token2 token1 tokenX 
+	| token6 token2 token1 token5 tokenX 
+	| token4 token6 token2 token1 tokenX 
+	| token5 token6 token2 token1 tokenX 
+	| token6 token2 token1 tokenX 
+	| token3 token4 token5 token6 token1 token2 tokenX 
+	| token3 token4 token6 token1 token2 tokenX 
+	| token3 token5 token6 token1 token2 tokenX 
+	| token3 token6 token1 token2 tokenX 
+	| token4 token5 token6 token1 token2 tokenX 
+	| token4 token6 token1 token2 tokenX 
+	| token5 token6 token1 token2 tokenX 
+	| token6 token1 token2 tokenX 
+	| token3 token4 token5 token2 token6 token1 tokenX 
+	| token6 token5 token2 token1 tokenX 
+	| token5 token1 token6 token2 token4 tokenX 
+	| token3 token5 token1 token4 token6 token2 tokenX 
+	| token5 token1 token4 token6 token2 tokenX 
+	| token3 token5 token1 token4 token2 token6 tokenX 
+	| token5 token1 token4 token2 token6 tokenX 
+	| token3 token5 token1 token2 token6 token4 tokenX 
+	| token5 token1 token2 token6 token4 tokenX 
+	| token3 token5 token1 token2 token4 token6 tokenX 
+	| token5 token1 token2 token4 token6 tokenX 
+	| token3 token4 token6 token5 token2 token1 tokenX 
+	| token3 token6 token5 token2 token1 tokenX 
+	| token4 token6 token5 token2 token1 tokenX 
+	| token6 token1 token2 token4 token5 tokenX 
+	| token3 token4 token6 token5 token1 token2 tokenX 
+	| token3 token6 token5 token1 token2 tokenX 
+	| token4 token6 token5 token1 token2 tokenX 
+	| token6 token5 token1 token2 tokenX 
+	| token3 token4 token6 token2 token5 token1 tokenX 
+	| token3 token6 token2 token5 token1 tokenX 
+	| token4 token6 token2 token5 token1 tokenX 
+	| token6 token2 token5 token1 tokenX 
+	| token3 token4 token6 token2 token1 token5 tokenX 
+	| token3 token6 token2 token1 token5 tokenX 
+	| token4 token6 token2 token1 token5 tokenX 
+	| token4 token1 token5 token2 token3 token6 tokenX 
+	| token4 token1 token6 token5 token2 token3 tokenX 
+	| token4 token1 token6 token3 token5 token2 tokenX 
+	| token4 token1 token6 token3 token2 token5 tokenX 
+	| token4 token1 token6 token2 token5 token3 tokenX 
+	| token4 token1 token6 token2 token3 token5 tokenX 
+	| token4 token1 token5 token6 token3 token2 tokenX 
+	| token4 token1 token6 token3 token2 tokenX 
+	| token4 token1 token5 token6 token2 token3 tokenX 
+	| token4 token1 token6 token2 token3 tokenX 
+	| token4 token1 token5 token3 token6 token2 tokenX 
+	| token4 token1 token5 token3 token2 token6 tokenX 
+	| token4 token1 token5 token2 token6 token3 tokenX 
+	| token4 token1 token6 token5 token3 token2 tokenX 
+	| token4 token1 token3 token6 token5 token2 tokenX 
+	| token4 token1 token3 token6 token2 token5 tokenX 
+	| token4 token1 token3 token5 token6 token2 tokenX 
+	| token4 token1 token3 token6 token2 tokenX 
+	| token4 token1 token3 token5 token2 token6 tokenX 
+	| token4 token1 token3 token2 token6 token5 tokenX 
+	| token4 token1 token3 token2 token5 token6 tokenX 
+	| token4 token1 token3 token2 token6 tokenX 
+	| token4 token1 token2 token6 token5 token3 tokenX 
+	| token4 token1 token2 token6 token3 token5 tokenX 
+	| token4 token1 token2 token5 token6 token3 tokenX 
+	| token4 token1 token2 token6 token3 tokenX 
+	| token4 token2 token3 token5 token1 token6 tokenX 
+	| token4 token2 token5 token6 token3 token1 tokenX 
+	| token4 token2 token6 token3 token1 tokenX 
+	| token4 token2 token5 token6 token1 token3 tokenX 
+	| token4 token2 token6 token1 token3 tokenX 
+	| token4 token2 token5 token3 token6 token1 tokenX 
+	| token4 token2 token5 token3 token1 token6 tokenX 
+	| token4 token2 token5 token1 token6 token3 tokenX 
+	| token4 token2 token5 token1 token3 token6 tokenX 
+	| token4 token2 token3 token6 token5 token1 tokenX 
+	| token4 token2 token3 token6 token1 token5 tokenX 
+	| token4 token2 token3 token5 token6 token1 tokenX 
+	| token4 token2 token3 token6 token1 tokenX 
+	| token4 token1 token2 token5 token3 token6 tokenX 
+	| token4 token2 token3 token1 token6 token5 tokenX 
+	| token4 token2 token3 token1 token5 token6 tokenX 
+	| token4 token2 token3 token1 token6 tokenX 
+	| token4 token2 token1 token6 token5 token3 tokenX 
+	| token4 token2 token1 token6 token3 token5 tokenX 
+	| token4 token2 token1 token5 token6 token3 tokenX 
+	| token4 token2 token1 token6 token3 tokenX 
+	| token4 token2 token1 token5 token3 token6 tokenX 
+	| token4 token2 token1 token3 token6 token5 tokenX 
+	| token4 token2 token1 token3 token5 token6 tokenX 
+	| token4 token2 token1 token3 token6 tokenX 
+	| token3 token6 token2 token1 token4 token5 tokenX 
+	| token3 token6 token4 token1 token2 token5 tokenX 
+	| token6 token4 token1 token2 token5 tokenX 
+	| token3 token6 token2 token5 token4 token1 tokenX 
+	| token6 token2 token5 token4 token1 tokenX 
+	| token3 token6 token2 token5 token1 token4 tokenX 
+	| token6 token2 token5 token1 token4 tokenX 
+	| token3 token6 token2 token4 token5 token1 tokenX 
+	| token6 token2 token4 token5 token1 tokenX 
+	| token3 token6 token2 token4 token1 token5 tokenX 
+	| token6 token2 token4 token1 token5 tokenX 
+	| token3 token6 token2 token1 token5 token4 tokenX 
+	| token6 token2 token1 token5 token4 tokenX 
+	| token6 token4 token1 token5 token2 tokenX 
+	| token6 token2 token1 token4 token5 tokenX 
+	| token3 token6 token1 token5 token4 token2 tokenX 
+	| token6 token1 token5 token4 token2 tokenX 
+	| token3 token6 token1 token5 token2 token4 tokenX 
+	| token6 token1 token5 token2 token4 tokenX 
+	| token3 token6 token1 token4 token5 token2 tokenX 
+	| token6 token1 token4 token5 token2 tokenX 
+	| token3 token6 token1 token4 token2 token5 tokenX 
+	| token6 token1 token4 token2 token5 tokenX 
+	| token3 token6 token1 token2 token5 token4 tokenX 
+	| token6 token1 token2 token5 token4 tokenX 
+	| token3 token6 token1 token2 token4 token5 tokenX 
+	| token6 token5 token1 token4 token2 tokenX 
+	| token4 token1 token2 token3 token6 token5 tokenX 
+	| token4 token1 token2 token3 token5 token6 tokenX 
+	| token4 token1 token2 token3 token6 tokenX 
+	| token3 token6 token5 token4 token2 token1 tokenX 
+	| token6 token5 token4 token2 token1 tokenX 
+	| token3 token6 token5 token4 token1 token2 tokenX 
+	| token6 token5 token4 token1 token2 tokenX 
+	| token3 token6 token5 token2 token4 token1 tokenX 
+	| token6 token5 token2 token4 token1 tokenX 
+	| token3 token6 token5 token2 token1 token4 tokenX 
+	| token6 token5 token2 token1 token4 tokenX 
+	| token3 token6 token5 token1 token4 token2 tokenX 
+	| token3 token5 token2 token6 token1 tokenX 
+	| token3 token6 token5 token1 token2 token4 tokenX 
+	| token6 token5 token1 token2 token4 tokenX 
+	| token3 token6 token4 token5 token2 token1 tokenX 
+	| token6 token4 token5 token2 token1 tokenX 
+	| token3 token6 token4 token5 token1 token2 tokenX 
+	| token6 token4 token5 token1 token2 tokenX 
+	| token3 token6 token4 token2 token5 token1 tokenX 
+	| token6 token4 token2 token5 token1 tokenX 
+	| token3 token6 token4 token2 token1 token5 tokenX 
+	| token6 token4 token2 token1 token5 tokenX 
+	| token3 token6 token4 token1 token5 token2 tokenX 
+	| token6 token4 token3 token5 token1 tokenX 
+	| token6 token5 token3 token4 token1 tokenX 
+	| token2 token6 token5 token3 token1 token4 tokenX 
+	| token6 token5 token3 token1 token4 tokenX 
+	| token2 token6 token5 token1 token4 token3 tokenX 
+	| token6 token5 token1 token4 token3 tokenX 
+	| token2 token6 token5 token1 token3 token4 tokenX 
+	| token6 token5 token1 token3 token4 tokenX 
+	| token2 token6 token4 token5 token3 token1 tokenX 
+	| token6 token4 token5 token3 token1 tokenX 
+	| token2 token6 token4 token5 token1 token3 tokenX 
+	| token6 token4 token5 token1 token3 tokenX 
+	| token2 token6 token4 token3 token5 token1 tokenX 
+	| token2 token6 token5 token3 token4 token1 tokenX 
+	| token2 token6 token4 token3 token1 token5 tokenX 
+	| token6 token4 token3 token1 token5 tokenX 
+	| token2 token6 token4 token1 token5 token3 tokenX 
+	| token6 token4 token1 token5 token3 tokenX 
+	| token2 token6 token4 token1 token3 token5 tokenX 
+	| token6 token4 token1 token3 token5 tokenX 
+	| token2 token6 token3 token5 token4 token1 tokenX 
+	| token6 token3 token5 token4 token1 tokenX 
+	| token2 token6 token3 token5 token1 token4 tokenX 
+	| token6 token3 token5 token1 token4 tokenX 
+	| token2 token6 token3 token4 token5 token1 tokenX 
+	| token6 token3 token4 token5 token1 tokenX 
+	| token3 token1 token2 token6 token4 tokenX 
+	| token3 token1 token4 token5 token6 token2 tokenX 
+	| token3 token1 token4 token6 token2 tokenX 
+	| token3 token1 token5 token6 token2 tokenX 
+	| token3 token1 token6 token2 tokenX 
+	| token3 token1 token4 token5 token2 token6 tokenX 
+	| token3 token1 token5 token2 token6 tokenX 
+	| token3 token1 token4 token2 token6 token5 tokenX 
+	| token3 token1 token4 token2 token5 token6 tokenX 
+	| token3 token1 token4 token2 token6 tokenX 
+	| token3 token1 token2 token6 token5 token4 tokenX 
+	| token3 token1 token2 token6 token4 token5 tokenX 
+	| token3 token1 token2 token5 token6 token4 tokenX 
+	| token2 token6 token3 token4 token1 token5 tokenX 
+	| token3 token1 token2 token5 token4 token6 tokenX 
+	| token3 token1 token2 token4 token6 token5 tokenX 
+	| token3 token1 token2 token6 token5 tokenX 
+	| token3 token1 token2 token4 token5 token6 tokenX 
+	| token3 token1 token2 token4 token6 tokenX 
+	| token3 token1 token2 token5 token6 tokenX 
+	| token3 token1 token2 token6 tokenX 
+	| token2 token6 token5 token4 token3 token1 tokenX 
+	| token6 token5 token4 token3 token1 tokenX 
+	| token2 token6 token5 token4 token1 token3 tokenX 
+	| token6 token5 token4 token1 token3 tokenX 
+	| token2 token5 token6 token1 token3 token4 tokenX 
+	| token2 token5 token6 token3 token4 token1 tokenX 
+	| token2 token6 token3 token4 token1 tokenX 
+	| token5 token6 token3 token4 token1 tokenX 
+	| token6 token3 token4 token1 tokenX 
+	| token2 token5 token6 token3 token1 token4 tokenX 
+	| token2 token6 token3 token1 token4 tokenX 
+	| token5 token6 token3 token1 token4 tokenX 
+	| token6 token3 token1 token4 tokenX 
+	| token2 token5 token6 token1 token4 token3 tokenX 
+	| token2 token6 token1 token4 token3 tokenX 
+	| token5 token6 token1 token4 token3 tokenX 
+	| token6 token1 token4 token3 tokenX 
+	| token6 token4 token1 token3 tokenX 
+	| token2 token6 token1 token3 token4 tokenX 
+	| token5 token6 token1 token3 token4 tokenX 
+	| token6 token1 token3 token4 tokenX 
+	| token2 token5 token4 token6 token3 token1 tokenX 
+	| token5 token4 token6 token3 token1 tokenX 
+	| token2 token5 token4 token6 token1 token3 tokenX 
+	| token5 token4 token6 token1 token3 tokenX 
+	| token2 token5 token4 token3 token6 token1 tokenX 
+	| token5 token4 token3 token6 token1 tokenX 
+	| token2 token5 token4 token3 token1 token6 tokenX 
+	| token5 token4 token3 token1 token6 tokenX 
+	| token2 token5 token4 token1 token6 token3 tokenX 
+	| token6 token1 token4 token3 token5 tokenX 
+	| token6 token3 token4 token1 token5 tokenX 
+	| token2 token6 token3 token1 token5 token4 tokenX 
+	| token6 token3 token1 token5 token4 tokenX 
+	| token2 token6 token3 token1 token4 token5 tokenX 
+	| token6 token3 token1 token4 token5 tokenX 
+	| token2 token6 token1 token5 token4 token3 tokenX 
+	| token6 token1 token5 token4 token3 tokenX 
+	| token2 token6 token1 token5 token3 token4 tokenX 
+	| token6 token1 token5 token3 token4 tokenX 
+	| token2 token6 token1 token4 token5 token3 tokenX 
+	| token6 token1 token4 token5 token3 tokenX 
+	| token2 token6 token1 token4 token3 token5 tokenX 
+	| token3 token1 token6 token2 token5 tokenX 
+	| token2 token6 token1 token3 token5 token4 tokenX 
+	| token6 token1 token3 token5 token4 tokenX 
+	| token2 token6 token1 token3 token4 token5 tokenX 
+	| token6 token1 token3 token4 token5 tokenX 
+	| token2 token5 token6 token4 token3 token1 tokenX 
+	| token2 token6 token4 token3 token1 tokenX 
+	| token5 token6 token4 token3 token1 tokenX 
+	| token6 token4 token3 token1 tokenX 
+	| token2 token5 token6 token4 token1 token3 tokenX 
+	| token2 token6 token4 token1 token3 tokenX 
+	| token5 token6 token4 token1 token3 tokenX 
+	| token4 token1 token6 token2 tokenX 
+	| token4 token2 token1 token6 token5 tokenX 
+	| token3 token4 token2 token1 token5 token6 tokenX 
+	| token3 token4 token2 token1 token6 tokenX 
+	| token4 token2 token1 token5 token6 tokenX 
+	| token4 token2 token1 token6 tokenX 
+	| token3 token4 token1 token6 token5 token2 tokenX 
+	| token4 token1 token6 token5 token2 tokenX 
+	| token3 token4 token1 token6 token2 token5 tokenX 
+	| token4 token1 token6 token2 token5 tokenX 
+	| token3 token4 token1 token5 token6 token2 tokenX 
+	| token3 token4 token1 token6 token2 tokenX 
+	| token4 token1 token5 token6 token2 tokenX 
+	| token3 token4 token2 token1 token6 token5 tokenX 
+	| token3 token4 token1 token5 token2 token6 tokenX 
+	| token4 token1 token5 token2 token6 tokenX 
+	| token3 token4 token1 token2 token6 token5 tokenX 
+	| token4 token1 token2 token6 token5 tokenX 
+	| token3 token4 token1 token2 token5 token6 tokenX 
+	| token3 token4 token1 token2 token6 tokenX 
+	| token4 token1 token2 token5 token6 tokenX 
+	| token4 token1 token2 token6 tokenX 
+	| token3 token2 token6 token5 token4 token1 tokenX 
+	| token3 token2 token6 token5 token1 token4 tokenX 
+	| token3 token2 token6 token4 token5 token1 tokenX 
+	| token3 token2 token6 token4 token1 token5 tokenX 
+	| token4 token5 token1 token2 token6 tokenX 
+	| token4 token5 token2 token6 token1 tokenX 
+	| token5 token2 token6 token1 tokenX 
+	| token3 token4 token5 token2 token1 token6 tokenX 
+	| token3 token5 token2 token1 token6 tokenX 
+	| token4 token5 token2 token1 token6 tokenX 
+	| token5 token2 token1 token6 tokenX 
+	| token3 token4 token5 token1 token6 token2 tokenX 
+	| token3 token5 token1 token6 token2 tokenX 
+	| token4 token5 token1 token6 token2 tokenX 
+	| token5 token1 token6 token2 tokenX 
+	| token3 token4 token5 token1 token2 token6 tokenX 
+	| token3 token5 token1 token2 token6 tokenX 
+	| token3 token2 token6 token1 token5 token4 tokenX 
+	| token5 token1 token2 token6 tokenX 
+	| token3 token4 token2 token6 token5 token1 tokenX 
+	| token4 token2 token6 token5 token1 tokenX 
+	| token3 token4 token2 token6 token1 token5 tokenX 
+	| token4 token2 token6 token1 token5 tokenX 
+	| token3 token4 token2 token5 token6 token1 tokenX 
+	| token3 token4 token2 token6 token1 tokenX 
+	| token4 token2 token5 token6 token1 tokenX 
+	| token4 token2 token6 token1 tokenX 
+	| token3 token4 token2 token5 token1 token6 tokenX 
+	| token4 token2 token5 token1 token6 tokenX 
+	| token3 token1 token6 token2 token5 token4 tokenX 
+	| token3 token2 token1 token6 token4 tokenX 
+	| token3 token2 token1 token5 token4 token6 tokenX 
+	| token3 token2 token1 token4 token6 token5 tokenX 
+	| token3 token2 token1 token6 token5 tokenX 
+	| token3 token2 token1 token4 token5 token6 tokenX 
+	| token3 token2 token1 token4 token6 tokenX 
+	| token3 token2 token1 token5 token6 tokenX 
+	| token3 token2 token1 token6 tokenX 
+	| token3 token1 token6 token5 token4 token2 tokenX 
+	| token3 token1 token6 token5 token2 token4 tokenX 
+	| token3 token1 token6 token4 token5 token2 tokenX 
+	| token3 token1 token6 token4 token2 token5 tokenX 
+	| token3 token2 token1 token5 token6 token4 tokenX 
+	| token3 token1 token6 token2 token4 token5 tokenX 
+	| token3 token1 token5 token6 token4 token2 tokenX 
+	| token3 token1 token6 token4 token2 tokenX 
+	| token3 token1 token5 token6 token2 token4 tokenX 
+	| token3 token1 token6 token2 token4 tokenX 
+	| token3 token1 token5 token4 token6 token2 tokenX 
+	| token3 token1 token5 token4 token2 token6 tokenX 
+	| token3 token1 token5 token2 token6 token4 tokenX 
+	| token3 token1 token5 token2 token4 token6 tokenX 
+	| token3 token1 token4 token6 token5 token2 tokenX 
+	| token3 token1 token6 token5 token2 tokenX 
+	| token3 token1 token4 token6 token2 token5 tokenX 
+	| token3 token2 token6 token1 token5 tokenX 
+	| token3 token2 token6 token1 token4 token5 tokenX 
+	| token3 token2 token5 token6 token4 token1 tokenX 
+	| token3 token2 token6 token4 token1 tokenX 
+	| token3 token2 token5 token6 token1 token4 tokenX 
+	| token3 token2 token6 token1 token4 tokenX 
+	| token3 token2 token5 token4 token6 token1 tokenX 
+	| token3 token2 token5 token4 token1 token6 tokenX 
+	| token3 token2 token5 token1 token6 token4 tokenX 
+	| token3 token2 token5 token1 token4 token6 tokenX 
+	| token3 token2 token4 token6 token5 token1 tokenX 
+	| token3 token2 token6 token5 token1 tokenX 
+	| token3 token2 token4 token6 token1 token5 tokenX 
+	| token4 token2 token6 token1 token3 token5 tokenX 
+	| token3 token2 token4 token5 token6 token1 tokenX 
+	| token3 token2 token4 token6 token1 tokenX 
+	| token3 token2 token5 token6 token1 tokenX 
+	| token3 token2 token6 token1 tokenX 
+	| token3 token2 token4 token5 token1 token6 tokenX 
+	| token3 token2 token5 token1 token6 tokenX 
+	| token3 token2 token4 token1 token6 token5 tokenX 
+	| token3 token2 token4 token1 token5 token6 tokenX 
+	| token3 token2 token4 token1 token6 tokenX 
+	| token3 token2 token1 token6 token5 token4 tokenX 
+	| token3 token2 token1 token6 token4 token5 tokenX 
+	| token6 token3 token2 token1 token4 tokenX 
+	| token6 token4 token2 token1 token3 tokenX 
+	| token5 token6 token4 token1 token3 token2 tokenX 
+	| token6 token4 token1 token3 token2 tokenX 
+	| token5 token6 token4 token1 token2 token3 tokenX 
+	| token6 token4 token1 token2 token3 tokenX 
+	| token5 token6 token3 token4 token2 token1 tokenX 
+	| token6 token3 token4 token2 token1 tokenX 
+	| token5 token6 token3 token4 token1 token2 tokenX 
+	| token6 token3 token4 token1 token2 tokenX 
+	| token5 token6 token3 token2 token4 token1 tokenX 
+	| token6 token3 token2 token4 token1 tokenX 
+	| token5 token6 token3 token2 token1 token4 tokenX 
+	| token5 token6 token4 token2 token1 token3 tokenX 
+	| token5 token6 token3 token1 token4 token2 tokenX 
+	| token6 token3 token1 token4 token2 tokenX 
+	| token5 token6 token3 token1 token2 token4 tokenX 
+	| token6 token3 token1 token2 token4 tokenX 
+	| token5 token6 token2 token4 token3 token1 tokenX 
+	| token6 token2 token4 token3 token1 tokenX 
+	| token5 token6 token2 token4 token1 token3 tokenX 
+	| token6 token2 token4 token1 token3 tokenX 
+	| token5 token6 token2 token3 token4 token1 tokenX 
+	| token6 token2 token3 token4 token1 tokenX 
+	| token5 token6 token2 token3 token1 token4 tokenX 
+	| token6 token2 token3 token1 token4 tokenX 
+	| token6 token1 token2 token5 token4 token3 tokenX 
+	| token6 token1 token4 token5 token3 token2 tokenX 
+	| token6 token1 token4 token5 token2 token3 tokenX 
+	| token6 token1 token4 token3 token5 token2 tokenX 
+	| token6 token1 token4 token3 token2 token5 tokenX 
+	| token6 token1 token4 token2 token5 token3 tokenX 
+	| token6 token1 token4 token2 token3 token5 tokenX 
+	| token6 token1 token3 token5 token4 token2 tokenX 
+	| token6 token1 token3 token5 token2 token4 tokenX 
+	| token6 token1 token3 token4 token5 token2 tokenX 
+	| token6 token1 token3 token4 token2 token5 tokenX 
+	| token6 token1 token3 token2 token5 token4 tokenX 
+	| token6 token1 token3 token2 token4 token5 tokenX 
+	| token5 token6 token2 token1 token4 token3 tokenX 
+	| token6 token1 token2 token5 token3 token4 tokenX 
+	| token6 token1 token2 token4 token5 token3 tokenX 
+	| token6 token1 token2 token4 token3 token5 tokenX 
+	| token6 token1 token2 token3 token5 token4 tokenX 
+	| token6 token1 token2 token3 token4 token5 tokenX 
+	| token5 token6 token4 token3 token2 token1 tokenX 
+	| token6 token4 token3 token2 token1 tokenX 
+	| token5 token6 token4 token3 token1 token2 tokenX 
+	| token6 token4 token3 token1 token2 tokenX 
+	| token5 token6 token4 token2 token3 token1 tokenX 
+	| token6 token4 token2 token3 token1 tokenX 
+	| token5 token4 token1 token2 token6 token3 tokenX 
+	| token5 token4 token3 token1 token6 token2 tokenX 
+	| token5 token4 token3 token1 token2 token6 tokenX 
+	| token5 token4 token2 token6 token3 token1 tokenX 
+	| token5 token4 token2 token6 token1 token3 tokenX 
+	| token5 token4 token2 token3 token6 token1 tokenX 
+	| token5 token4 token2 token3 token1 token6 tokenX 
+	| token5 token4 token2 token1 token6 token3 tokenX 
+	| token5 token4 token2 token1 token3 token6 tokenX 
+	| token5 token4 token1 token6 token3 token2 tokenX 
+	| token5 token4 token1 token6 token2 token3 tokenX 
+	| token5 token4 token1 token3 token6 token2 tokenX 
+	| token5 token4 token1 token3 token2 token6 tokenX 
+	| token5 token4 token3 token2 token1 token6 tokenX 
+	| token5 token4 token1 token2 token3 token6 tokenX 
+	| token5 token3 token6 token4 token2 token1 tokenX 
+	| token5 token3 token6 token4 token1 token2 tokenX 
+	| token5 token3 token6 token2 token4 token1 tokenX 
+	| token5 token3 token6 token2 token1 token4 tokenX 
+	| token5 token3 token6 token1 token4 token2 tokenX 
+	| token5 token3 token6 token1 token2 token4 tokenX 
+	| token5 token3 token4 token6 token2 token1 tokenX 
+	| token5 token3 token4 token6 token1 token2 tokenX 
+	| token5 token3 token4 token2 token6 token1 tokenX 
+	| token5 token3 token4 token2 token1 token6 tokenX 
+	| token5 token3 token4 token1 token6 token2 tokenX 
+	| token6 token1 token2 token4 token3 tokenX 
+	| token6 token2 token1 token4 token3 tokenX 
+	| token5 token6 token2 token1 token3 token4 tokenX 
+	| token6 token2 token1 token3 token4 tokenX 
+	| token5 token6 token1 token4 token3 token2 tokenX 
+	| token6 token1 token4 token3 token2 tokenX 
+	| token5 token6 token1 token4 token2 token3 tokenX 
+	| token6 token1 token4 token2 token3 tokenX 
+	| token5 token6 token1 token3 token4 token2 tokenX 
+	| token6 token1 token3 token4 token2 tokenX 
+	| token5 token6 token1 token3 token2 token4 tokenX 
+	| token6 token1 token3 token2 token4 tokenX 
+	| token5 token6 token1 token2 token4 token3 tokenX 
+	| token6 token1 token5 token2 token3 token4 tokenX 
+	| token5 token6 token1 token2 token3 token4 tokenX 
+	| token6 token1 token2 token3 token4 tokenX 
+	| token5 token4 token6 token3 token2 token1 tokenX 
+	| token5 token4 token6 token3 token1 token2 tokenX 
+	| token5 token4 token6 token2 token3 token1 tokenX 
+	| token5 token4 token6 token2 token1 token3 tokenX 
+	| token5 token4 token6 token1 token3 token2 tokenX 
+	| token5 token4 token6 token1 token2 token3 tokenX 
+	| token5 token4 token3 token6 token2 token1 tokenX 
+	| token5 token4 token3 token6 token1 token2 tokenX 
+	| token5 token4 token3 token2 token6 token1 tokenX 
+	| token6 token4 token2 token5 token1 token3 tokenX 
+	| token6 token4 token5 token3 token1 token2 tokenX 
+	| token6 token4 token5 token2 token3 token1 tokenX 
+	| token6 token4 token5 token2 token1 token3 tokenX 
+	| token6 token4 token5 token1 token3 token2 tokenX 
+	| token6 token4 token5 token1 token2 token3 tokenX 
+	| token6 token4 token3 token5 token2 token1 tokenX 
+	| token6 token4 token3 token5 token1 token2 tokenX 
+	| token6 token4 token3 token2 token5 token1 tokenX 
+	| token6 token4 token3 token2 token1 token5 tokenX 
+	| token6 token4 token3 token1 token5 token2 tokenX 
+	| token6 token4 token3 token1 token2 token5 tokenX 
+	| token6 token4 token2 token5 token3 token1 tokenX 
+	| token6 token4 token5 token3 token2 token1 tokenX 
+	| token6 token4 token2 token3 token5 token1 tokenX 
+	| token6 token4 token2 token3 token1 token5 tokenX 
+	| token6 token4 token2 token1 token5 token3 tokenX 
+	| token6 token4 token2 token1 token3 token5 tokenX 
+	| token6 token4 token1 token5 token3 token2 tokenX 
+	| token6 token4 token1 token5 token2 token3 tokenX 
+	| token6 token4 token1 token3 token5 token2 tokenX 
+	| token6 token4 token1 token3 token2 token5 tokenX 
+	| token6 token4 token1 token2 token5 token3 tokenX 
+	| token6 token4 token1 token2 token3 token5 tokenX 
+	| token6 token3 token5 token4 token2 token1 tokenX 
+	| token6 token3 token5 token4 token1 token2 tokenX 
+	| token6 token5 token2 token4 token3 token1 tokenX 
+	| token6 token5 token4 token3 token2 token1 tokenX 
+	| token6 token5 token4 token3 token1 token2 tokenX 
+	| token6 token5 token4 token2 token3 token1 tokenX 
+	| token6 token5 token4 token2 token1 token3 tokenX 
+	| token6 token5 token4 token1 token3 token2 tokenX 
+	| token6 token5 token4 token1 token2 token3 tokenX 
+	| token6 token5 token3 token4 token2 token1 tokenX 
+	| token6 token5 token3 token4 token1 token2 tokenX 
+	| token6 token5 token3 token2 token4 token1 tokenX 
+	| token6 token5 token3 token2 token1 token4 tokenX 
+	| token6 token5 token3 token1 token4 token2 tokenX 
+	| token6 token5 token3 token1 token2 token4 tokenX 
+	| token6 token3 token5 token2 token4 token1 tokenX 
+	| token6 token5 token2 token4 token1 token3 tokenX 
+	| token6 token5 token2 token3 token4 token1 tokenX 
+	| token6 token5 token2 token3 token1 token4 tokenX 
+	| token6 token5 token2 token1 token4 token3 tokenX 
+	| token6 token5 token2 token1 token3 token4 tokenX 
+	| token6 token5 token1 token4 token3 token2 tokenX 
+	| token6 token5 token1 token4 token2 token3 tokenX 
+	| token6 token5 token1 token3 token4 token2 tokenX 
+	| token6 token5 token1 token3 token2 token4 tokenX 
+	| token6 token5 token1 token2 token4 token3 tokenX 
+	| token6 token5 token1 token2 token3 token4 tokenX 
+	| token6 token2 token3 token1 token5 token4 tokenX 
+	| token6 token2 token5 token1 token4 token3 tokenX 
+	| token6 token2 token5 token1 token3 token4 tokenX 
+	| token6 token2 token4 token5 token3 token1 tokenX 
+	| token6 token2 token4 token5 token1 token3 tokenX 
+	| token6 token2 token4 token3 token5 token1 tokenX 
+	| token6 token2 token4 token3 token1 token5 tokenX 
+	| token6 token2 token4 token1 token5 token3 tokenX 
+	| token6 token2 token4 token1 token3 token5 tokenX 
+	| token6 token2 token3 token5 token4 token1 tokenX 
+	| token6 token2 token3 token5 token1 token4 tokenX 
+	| token6 token2 token3 token4 token5 token1 tokenX 
+	| token6 token2 token3 token4 token1 token5 tokenX 
+	| token6 token2 token5 token3 token1 token4 tokenX 
+	| token6 token2 token3 token1 token4 token5 tokenX 
+	| token6 token2 token1 token5 token4 token3 tokenX 
+	| token6 token2 token1 token5 token3 token4 tokenX 
+	| token6 token2 token1 token4 token5 token3 tokenX 
+	| token6 token2 token1 token4 token3 token5 tokenX 
+	| token6 token2 token1 token3 token5 token4 tokenX 
+	| token6 token2 token1 token3 token4 token5 tokenX 
+	| token6 token1 token5 token4 token3 token2 tokenX 
+	| token6 token1 token5 token4 token2 token3 tokenX 
+	| token6 token1 token5 token3 token4 token2 tokenX 
+	| token6 token1 token5 token3 token2 token4 tokenX 
+	| token6 token1 token5 token2 token4 token3 tokenX 
+	| token6 token3 token2 token4 token1 token5 tokenX 
+	| token6 token3 token5 token2 token1 token4 tokenX 
+	| token6 token3 token5 token1 token4 token2 tokenX 
+	| token6 token3 token5 token1 token2 token4 tokenX 
+	| token6 token3 token4 token5 token2 token1 tokenX 
+	| token6 token3 token4 token5 token1 token2 tokenX 
+	| token6 token3 token4 token2 token5 token1 tokenX 
+	| token6 token3 token4 token2 token1 token5 tokenX 
+	| token6 token3 token4 token1 token5 token2 tokenX 
+	| token6 token3 token4 token1 token2 token5 tokenX 
+	| token6 token3 token2 token5 token4 token1 tokenX 
+	| token6 token3 token2 token5 token1 token4 tokenX 
+	| token6 token3 token2 token4 token5 token1 tokenX 
+	| token5 token3 token4 token1 token2 token6 tokenX 
+	| token6 token3 token2 token1 token5 token4 tokenX 
+	| token6 token3 token2 token1 token4 token5 tokenX 
+	| token6 token3 token1 token5 token4 token2 tokenX 
+	| token6 token3 token1 token5 token2 token4 tokenX 
+	| token6 token3 token1 token4 token5 token2 tokenX 
+	| token6 token3 token1 token4 token2 token5 tokenX 
+	| token6 token3 token1 token2 token5 token4 tokenX 
+	| token6 token3 token1 token2 token4 token5 tokenX 
+	| token6 token2 token5 token4 token3 token1 tokenX 
+	| token6 token2 token5 token4 token1 token3 tokenX 
+	| token6 token2 token5 token3 token4 token1 tokenX 
+	| token5 token3 token2 token1 token6 tokenX 
+	| token6 token1 token3 token2 tokenX 
+	| token4 token5 token6 token1 token2 token3 tokenX 
+	| token4 token6 token1 token2 token3 tokenX 
+	| token5 token6 token1 token2 token3 tokenX 
+	| token6 token1 token2 token3 tokenX 
+	| token4 token5 token3 token6 token2 token1 tokenX 
+	| token5 token3 token6 token2 token1 tokenX 
+	| token4 token5 token3 token6 token1 token2 tokenX 
+	| token5 token3 token6 token1 token2 tokenX 
+	| token4 token5 token3 token2 token6 token1 tokenX 
+	| token5 token3 token2 token6 token1 tokenX 
+	| token4 token5 token3 token2 token1 token6 tokenX 
+	| token5 token6 token1 token3 token2 tokenX 
+	| token4 token5 token3 token1 token6 token2 tokenX 
+	| token5 token3 token1 token6 token2 tokenX 
+	| token4 token5 token3 token1 token2 token6 tokenX 
+	| token5 token3 token1 token2 token6 tokenX 
+	| token4 token5 token2 token6 token3 token1 tokenX 
+	| token5 token2 token6 token3 token1 tokenX 
+	| token4 token5 token2 token6 token1 token3 tokenX 
+	| token5 token2 token6 token1 token3 tokenX 
+	| token4 token5 token2 token3 token6 token1 tokenX 
+	| token5 token2 token3 token6 token1 tokenX 
+	| token4 token5 token2 token3 token1 token6 tokenX 
+	| token5 token2 token3 token1 token6 tokenX 
+	| token5 token6 token3 token1 token2 tokenX 
+	| token4 token6 token1 token3 token2 token5 tokenX 
+	| token6 token1 token3 token2 token5 tokenX 
+	| token4 token6 token1 token2 token5 token3 tokenX 
+	| token6 token1 token2 token5 token3 tokenX 
+	| token4 token6 token1 token2 token3 token5 tokenX 
+	| token6 token1 token2 token3 token5 tokenX 
+	| token4 token5 token6 token3 token2 token1 tokenX 
+	| token4 token6 token3 token2 token1 tokenX 
+	| token5 token6 token3 token2 token1 tokenX 
+	| token6 token3 token2 token1 tokenX 
+	| token4 token5 token6 token3 token1 token2 tokenX 
+	| token4 token6 token3 token1 token2 tokenX 
+	| token4 token5 token2 token1 token6 token3 tokenX 
+	| token6 token3 token1 token2 tokenX 
+	| token4 token5 token6 token2 token3 token1 tokenX 
+	| token4 token6 token2 token3 token1 tokenX 
+	| token5 token6 token2 token3 token1 tokenX 
+	| token6 token2 token3 token1 tokenX 
+	| token4 token5 token6 token2 token1 token3 tokenX 
+	| token4 token6 token2 token1 token3 tokenX 
+	| token5 token6 token2 token1 token3 tokenX 
+	| token6 token2 token1 token3 tokenX 
+	| token4 token5 token6 token1 token3 token2 tokenX 
+	| token4 token6 token1 token3 token2 tokenX 
+	| token4 token3 token1 token6 token5 token2 tokenX 
+	| token4 token3 token5 token2 token6 token1 tokenX 
+	| token4 token3 token5 token2 token1 token6 tokenX 
+	| token4 token3 token5 token1 token6 token2 tokenX 
+	| token4 token3 token5 token1 token2 token6 tokenX 
+	| token4 token3 token2 token6 token5 token1 tokenX 
+	| token4 token3 token2 token6 token1 token5 tokenX 
+	| token4 token3 token2 token5 token6 token1 tokenX 
+	| token4 token3 token2 token6 token1 tokenX 
+	| token4 token3 token2 token5 token1 token6 tokenX 
+	| token4 token3 token2 token1 token6 token5 tokenX 
+	| token4 token3 token2 token1 token5 token6 tokenX 
+	| token4 token3 token2 token1 token6 tokenX 
+	| token4 token3 token6 token1 token2 tokenX 
+	| token4 token3 token1 token6 token2 token5 tokenX 
+	| token4 token3 token1 token5 token6 token2 tokenX 
+	| token4 token3 token1 token6 token2 tokenX 
+	| token4 token3 token1 token5 token2 token6 tokenX 
+	| token4 token3 token1 token2 token6 token5 tokenX 
+	| token4 token3 token1 token2 token5 token6 tokenX 
+	| token4 token3 token1 token2 token6 tokenX 
+	| token4 token2 token6 token5 token3 token1 tokenX 
+	| token4 token2 token6 token5 token1 token3 tokenX 
+	| token4 token2 token6 token3 token5 token1 tokenX 
+	| token4 token2 token6 token3 token1 token5 tokenX 
+	| token4 token2 token6 token1 token5 token3 tokenX 
+	| token5 token1 token2 token6 token3 tokenX 
+	| token5 token2 token1 token6 token3 tokenX 
+	| token4 token5 token2 token1 token3 token6 tokenX 
+	| token5 token2 token1 token3 token6 tokenX 
+	| token4 token5 token1 token6 token3 token2 tokenX 
+	| token5 token1 token6 token3 token2 tokenX 
+	| token4 token5 token1 token6 token2 token3 tokenX 
+	| token5 token1 token6 token2 token3 tokenX 
+	| token4 token5 token1 token3 token6 token2 tokenX 
+	| token5 token1 token3 token6 token2 tokenX 
+	| token4 token5 token1 token3 token2 token6 tokenX 
+	| token5 token1 token3 token2 token6 tokenX 
+	| token4 token5 token1 token2 token6 token3 tokenX 
+	| token6 token1 token3 token5 token2 tokenX 
+	| token4 token5 token1 token2 token3 token6 tokenX 
+	| token5 token1 token2 token3 token6 tokenX 
+	| token4 token3 token6 token5 token2 token1 tokenX 
+	| token4 token3 token6 token5 token1 token2 tokenX 
+	| token4 token3 token6 token2 token5 token1 tokenX 
+	| token4 token3 token6 token2 token1 token5 tokenX 
+	| token4 token3 token6 token1 token5 token2 tokenX 
+	| token4 token3 token6 token1 token2 token5 tokenX 
+	| token4 token3 token5 token6 token2 token1 tokenX 
+	| token4 token3 token6 token2 token1 tokenX 
+	| token4 token3 token5 token6 token1 token2 tokenX 
+	| token5 token1 token6 token4 token2 token3 tokenX 
+	| token5 token2 token3 token6 token1 token4 tokenX 
+	| token5 token2 token3 token4 token6 token1 tokenX 
+	| token5 token2 token3 token4 token1 token6 tokenX 
+	| token5 token2 token3 token1 token6 token4 tokenX 
+	| token5 token2 token3 token1 token4 token6 tokenX 
+	| token5 token2 token1 token6 token4 token3 tokenX 
+	| token5 token2 token1 token6 token3 token4 tokenX 
+	| token5 token2 token1 token4 token6 token3 tokenX 
+	| token5 token2 token1 token4 token3 token6 tokenX 
+	| token5 token2 token1 token3 token6 token4 tokenX 
+	| token5 token2 token1 token3 token4 token6 tokenX 
+	| token5 token1 token6 token4 token3 token2 tokenX 
+	| token5 token2 token3 token6 token4 token1 tokenX 
+	| token5 token1 token6 token3 token4 token2 tokenX 
+	| token5 token1 token6 token3 token2 token4 tokenX 
+	| token5 token1 token6 token2 token4 token3 tokenX 
+	| token5 token1 token6 token2 token3 token4 tokenX 
+	| token5 token1 token4 token6 token3 token2 tokenX 
+	| token5 token1 token4 token6 token2 token3 tokenX 
+	| token5 token1 token4 token3 token6 token2 tokenX 
+	| token5 token1 token4 token3 token2 token6 tokenX 
+	| token5 token1 token4 token2 token6 token3 tokenX 
+	| token5 token1 token4 token2 token3 token6 tokenX 
+	| token5 token1 token3 token6 token4 token2 tokenX 
+	| token5 token1 token3 token6 token2 token4 tokenX 
+	| token5 token2 token6 token4 token3 token1 tokenX 
+	| token5 token3 token2 token6 token4 token1 tokenX 
+	| token5 token3 token2 token6 token1 token4 tokenX 
+	| token5 token3 token2 token4 token6 token1 tokenX 
+	| token5 token3 token2 token4 token1 token6 tokenX 
+	| token5 token3 token2 token1 token6 token4 tokenX 
+	| token5 token3 token2 token1 token4 token6 tokenX 
+	| token5 token3 token1 token6 token4 token2 tokenX 
+	| token5 token3 token1 token6 token2 token4 tokenX 
+	| token5 token3 token1 token4 token6 token2 tokenX 
+	| token5 token3 token1 token4 token2 token6 tokenX 
+	| token5 token3 token1 token2 token6 token4 tokenX 
+	| token5 token3 token1 token2 token4 token6 tokenX 
+	| token5 token1 token3 token4 token6 token2 tokenX 
+	| token5 token2 token6 token4 token1 token3 tokenX 
+	| token5 token2 token6 token3 token4 token1 tokenX 
+	| token5 token2 token6 token3 token1 token4 tokenX 
+	| token5 token2 token6 token1 token4 token3 tokenX 
+	| token5 token2 token6 token1 token3 token4 tokenX 
+	| token5 token2 token4 token6 token3 token1 tokenX 
+	| token5 token2 token4 token6 token1 token3 tokenX 
+	| token5 token2 token4 token3 token6 token1 tokenX 
+	| token5 token2 token4 token3 token1 token6 tokenX 
+	| token5 token2 token4 token1 token6 token3 tokenX 
+	| token5 token2 token4 token1 token3 token6 tokenX 
+	| token4 token6 token2 token3 token5 token1 tokenX 
+	| token4 token6 token3 token2 token5 token1 tokenX 
+	| token6 token3 token2 token5 token1 tokenX 
+	| token4 token6 token3 token2 token1 token5 tokenX 
+	| token6 token3 token2 token1 token5 tokenX 
+	| token4 token6 token3 token1 token5 token2 tokenX 
+	| token6 token3 token1 token5 token2 tokenX 
+	| token4 token6 token3 token1 token2 token5 tokenX 
+	| token6 token3 token1 token2 token5 tokenX 
+	| token4 token6 token2 token5 token3 token1 tokenX 
+	| token6 token2 token5 token3 token1 tokenX 
+	| token4 token6 token2 token5 token1 token3 tokenX 
+	| token6 token2 token5 token1 token3 tokenX 
+	| token6 token3 token5 token1 token2 tokenX 
+	| token6 token2 token3 token5 token1 tokenX 
+	| token4 token6 token2 token3 token1 token5 tokenX 
+	| token6 token2 token3 token1 token5 tokenX 
+	| token4 token6 token2 token1 token5 token3 tokenX 
+	| token6 token2 token1 token5 token3 tokenX 
+	| token4 token6 token2 token1 token3 token5 tokenX 
+	| token6 token2 token1 token3 token5 tokenX 
+	| token4 token6 token1 token5 token3 token2 tokenX 
+	| token6 token1 token5 token3 token2 tokenX 
+	| token4 token6 token1 token5 token2 token3 tokenX 
+	| token6 token1 token5 token2 token3 tokenX 
+	| token4 token6 token1 token3 token5 token2 tokenX 
+	| token6 token5 token3 token1 token2 tokenX 
+	| token5 token1 token3 token4 token2 token6 tokenX 
+	| token5 token1 token3 token2 token6 token4 tokenX 
+	| token5 token1 token3 token2 token4 token6 tokenX 
+	| token5 token1 token2 token6 token4 token3 tokenX 
+	| token5 token1 token2 token6 token3 token4 tokenX 
+	| token5 token1 token2 token4 token6 token3 tokenX 
+	| token5 token1 token2 token4 token3 token6 tokenX 
+	| token5 token1 token2 token3 token6 token4 tokenX 
+	| token5 token1 token2 token3 token4 token6 tokenX 
+	| token4 token6 token5 token3 token2 token1 tokenX 
+	| token6 token5 token3 token2 token1 tokenX 
+	| token4 token6 token5 token3 token1 token2 tokenX 
+	| token5 token4 token1 token6 token3 tokenX 
+	| token4 token6 token5 token2 token3 token1 tokenX 
+	| token6 token5 token2 token3 token1 tokenX 
+	| token4 token6 token5 token2 token1 token3 tokenX 
+	| token6 token5 token2 token1 token3 tokenX 
+	| token4 token6 token5 token1 token3 token2 tokenX 
+	| token6 token5 token1 token3 token2 tokenX 
+	| token4 token6 token5 token1 token2 token3 tokenX 
+	| token6 token5 token1 token2 token3 tokenX 
+	| token4 token6 token3 token5 token2 token1 tokenX 
+	| token6 token3 token5 token2 token1 tokenX 
+	| token4 token6 token3 token5 token1 token2 tokenX 
+	| token1 token3 token6 token5 token2 tokenX 
+	| token1 token5 token4 token2 token6 tokenX 
+	| token3 token5 token4 token2 token6 tokenX 
+	| token5 token4 token2 token6 tokenX 
+	| token1 token3 token5 token2 token6 token4 tokenX 
+	| token1 token5 token2 token6 token4 tokenX 
+	| token3 token5 token2 token6 token4 tokenX 
+	| token5 token2 token6 token4 tokenX 
+	| token1 token3 token5 token2 token4 token6 tokenX 
+	| token1 token5 token2 token4 token6 tokenX 
+	| token3 token5 token2 token4 token6 tokenX 
+	| token5 token2 token4 token6 tokenX 
+	| token1 token3 token4 token6 token5 token2 tokenX 
+	| token1 token3 token5 token4 token2 token6 tokenX 
+	| token1 token4 token6 token5 token2 tokenX 
+	| token1 token6 token5 token2 tokenX 
+	| token3 token4 token6 token5 token2 tokenX 
+	| token3 token6 token5 token2 tokenX 
+	| token4 token6 token5 token2 tokenX 
+	| token6 token5 token2 tokenX 
+	| token1 token3 token4 token6 token2 token5 tokenX 
+	| token1 token3 token6 token2 token5 tokenX 
+	| token1 token4 token6 token2 token5 tokenX 
+	| token1 token6 token2 token5 tokenX 
+	| token3 token4 token6 token2 token5 tokenX 
+	| token3 token6 token2 token5 tokenX 
+	| token1 token3 token5 token6 token2 token4 tokenX 
+	| token1 token3 token6 token2 token4 token5 tokenX 
+	| token1 token6 token2 token4 token5 tokenX 
+	| token3 token6 token2 token4 token5 tokenX 
+	| token6 token2 token4 token5 tokenX 
+	| token1 token3 token5 token6 token4 token2 tokenX 
+	| token1 token3 token6 token4 token2 tokenX 
+	| token1 token5 token6 token4 token2 tokenX 
+	| token1 token6 token4 token2 tokenX 
+	| token3 token5 token6 token4 token2 tokenX 
+	| token3 token6 token4 token2 tokenX 
+	| token5 token6 token4 token2 tokenX 
+	| token6 token4 token2 tokenX 
+	| token4 token6 token2 token5 tokenX 
+	| token1 token3 token6 token2 token4 tokenX 
+	| token1 token5 token6 token2 token4 tokenX 
+	| token1 token6 token2 token4 tokenX 
+	| token3 token5 token6 token2 token4 tokenX 
+	| token3 token6 token2 token4 tokenX 
+	| token5 token6 token2 token4 tokenX 
+	| token6 token2 token4 tokenX 
+	| token1 token3 token5 token4 token6 token2 tokenX 
+	| token1 token5 token4 token6 token2 tokenX 
+	| token3 token5 token4 token6 token2 tokenX 
+	| token5 token4 token6 token2 tokenX 
+	| token1 token3 token2 token6 token5 token4 tokenX 
+	| token1 token3 token4 token2 token6 token5 tokenX 
+	| token1 token4 token2 token6 token5 tokenX 
+	| token3 token4 token2 token6 token5 tokenX 
+	| token4 token2 token6 token5 tokenX 
+	| token1 token3 token4 token2 token5 token6 tokenX 
+	| token1 token3 token4 token2 token6 tokenX 
+	| token1 token4 token2 token5 token6 tokenX 
+	| token1 token4 token2 token6 tokenX 
+	| token3 token4 token2 token5 token6 tokenX 
+	| token3 token4 token2 token6 tokenX 
+	| token4 token2 token5 token6 tokenX 
+	| token4 token2 token6 tokenX 
+	| token5 token2 token6 tokenX 
+	| token3 token2 token6 token5 token4 tokenX 
+	| token1 token3 token2 token6 token4 token5 tokenX 
+	| token3 token2 token6 token4 token5 tokenX 
+	| token1 token3 token2 token5 token6 token4 tokenX 
+	| token1 token3 token2 token6 token4 tokenX 
+	| token3 token2 token5 token6 token4 tokenX 
+	| token3 token2 token6 token4 tokenX 
+	| token1 token3 token2 token5 token4 token6 tokenX 
+	| token3 token2 token5 token4 token6 tokenX 
+	| token1 token3 token2 token4 token6 token5 tokenX 
+	| token1 token3 token2 token6 token5 tokenX 
+	| token3 token2 token4 token6 token5 tokenX 
+	| token3 token6 token2 tokenX 
+	| token6 token2 token5 tokenX 
+	| token1 token3 token4 token5 token6 token2 tokenX 
+	| token1 token3 token4 token6 token2 tokenX 
+	| token1 token3 token5 token6 token2 tokenX 
+	| token1 token3 token6 token2 tokenX 
+	| token1 token4 token5 token6 token2 tokenX 
+	| token1 token4 token6 token2 tokenX 
+	| token1 token5 token6 token2 tokenX 
+	| token1 token6 token2 tokenX 
+	| token3 token4 token5 token6 token2 tokenX 
+	| token3 token4 token6 token2 tokenX 
+	| token3 token5 token6 token2 tokenX 
+	| token6 token2 token5 token4 tokenX 
+	| token4 token5 token6 token2 tokenX 
+	| token4 token6 token2 tokenX 
+	| token5 token6 token2 tokenX 
+	| token6 token2 tokenX 
+	| token1 token3 token4 token5 token2 token6 tokenX 
+	| token1 token3 token5 token2 token6 tokenX 
+	| token1 token4 token5 token2 token6 tokenX 
+	| token1 token5 token2 token6 tokenX 
+	| token3 token4 token5 token2 token6 tokenX 
+	| token3 token5 token2 token6 tokenX 
+	| token4 token5 token2 token6 tokenX 
+	| token5 token3 token6 token2 tokenX 
+	| token6 token3 token2 tokenX 
+	| token1 token4 token5 token6 token2 token3 tokenX 
+	| token1 token4 token6 token2 token3 tokenX 
+	| token1 token5 token6 token2 token3 tokenX 
+	| token1 token6 token2 token3 tokenX 
+	| token4 token5 token6 token2 token3 tokenX 
+	| token4 token6 token2 token3 tokenX 
+	| token5 token6 token2 token3 tokenX 
+	| token6 token2 token3 tokenX 
+	| token1 token4 token5 token3 token6 token2 tokenX 
+	| token1 token5 token3 token6 token2 tokenX 
+	| token4 token5 token3 token6 token2 tokenX 
+	| token5 token6 token3 token2 tokenX 
+	| token1 token4 token5 token3 token2 token6 tokenX 
+	| token1 token5 token3 token2 token6 tokenX 
+	| token4 token5 token3 token2 token6 tokenX 
+	| token5 token3 token2 token6 tokenX 
+	| token1 token4 token5 token2 token6 token3 tokenX 
+	| token1 token5 token2 token6 token3 tokenX 
+	| token4 token5 token2 token6 token3 tokenX 
+	| token5 token2 token6 token3 tokenX 
+	| token1 token4 token5 token2 token3 token6 tokenX 
+	| token1 token5 token2 token3 token6 tokenX 
+	| token4 token5 token2 token3 token6 tokenX 
+	| token5 token2 token3 token6 tokenX 
+	| token4 token6 token2 token5 token3 tokenX 
+	| token4 token6 token5 token2 token3 tokenX 
+	| token6 token5 token2 token3 tokenX 
+	| token1 token4 token6 token3 token5 token2 tokenX 
+	| token1 token6 token3 token5 token2 tokenX 
+	| token4 token6 token3 token5 token2 tokenX 
+	| token6 token3 token5 token2 tokenX 
+	| token1 token4 token6 token3 token2 token5 tokenX 
+	| token1 token6 token3 token2 token5 tokenX 
+	| token4 token6 token3 token2 token5 tokenX 
+	| token6 token3 token2 token5 tokenX 
+	| token1 token4 token6 token2 token5 token3 tokenX 
+	| token1 token6 token2 token5 token3 tokenX 
+	| token1 token4 token3 token6 token5 token2 tokenX 
+	| token6 token2 token5 token3 tokenX 
+	| token1 token4 token6 token2 token3 token5 tokenX 
+	| token1 token6 token2 token3 token5 tokenX 
+	| token4 token6 token2 token3 token5 tokenX 
+	| token6 token2 token3 token5 tokenX 
+	| token1 token4 token5 token6 token3 token2 tokenX 
+	| token1 token4 token6 token3 token2 tokenX 
+	| token1 token5 token6 token3 token2 tokenX 
+	| token1 token6 token3 token2 tokenX 
+	| token4 token5 token6 token3 token2 tokenX 
+	| token4 token6 token3 token2 tokenX 
+	| token3 token6 token5 token2 token4 tokenX 
+	| token1 token4 token2 token3 token6 token5 tokenX 
+	| token4 token2 token3 token6 token5 tokenX 
+	| token1 token4 token2 token3 token5 token6 tokenX 
+	| token1 token4 token2 token3 token6 tokenX 
+	| token4 token2 token3 token5 token6 tokenX 
+	| token4 token2 token3 token6 tokenX 
+	| token1 token3 token6 token5 token4 token2 tokenX 
+	| token1 token6 token5 token4 token2 tokenX 
+	| token3 token6 token5 token4 token2 tokenX 
+	| token6 token5 token4 token2 tokenX 
+	| token1 token3 token6 token5 token2 token4 tokenX 
+	| token1 token6 token5 token2 token4 tokenX 
+	| token4 token2 token5 token3 token6 tokenX 
+	| token6 token5 token2 token4 tokenX 
+	| token1 token3 token6 token4 token5 token2 tokenX 
+	| token1 token6 token4 token5 token2 tokenX 
+	| token3 token6 token4 token5 token2 tokenX 
+	| token6 token4 token5 token2 tokenX 
+	| token1 token3 token6 token4 token2 token5 tokenX 
+	| token1 token6 token4 token2 token5 tokenX 
+	| token3 token6 token4 token2 token5 tokenX 
+	| token6 token4 token2 token5 tokenX 
+	| token1 token3 token6 token2 token5 token4 tokenX 
+	| token1 token6 token2 token5 token4 tokenX 
+	| token3 token6 token2 token5 token4 tokenX 
+	| token1 token4 token3 token2 token6 tokenX 
+	| token4 token3 token6 token5 token2 tokenX 
+	| token1 token4 token3 token6 token2 token5 tokenX 
+	| token4 token3 token6 token2 token5 tokenX 
+	| token1 token4 token3 token5 token6 token2 tokenX 
+	| token1 token4 token3 token6 token2 tokenX 
+	| token4 token3 token5 token6 token2 tokenX 
+	| token4 token3 token6 token2 tokenX 
+	| token1 token4 token3 token5 token2 token6 tokenX 
+	| token4 token3 token5 token2 token6 tokenX 
+	| token1 token4 token3 token2 token6 token5 tokenX 
+	| token4 token3 token2 token6 token5 tokenX 
+	| token1 token4 token3 token2 token5 token6 tokenX 
+	| token3 token2 token6 token5 tokenX 
+	| token4 token3 token2 token5 token6 tokenX 
+	| token4 token3 token2 token6 tokenX 
+	| token1 token4 token2 token6 token5 token3 tokenX 
+	| token4 token2 token6 token5 token3 tokenX 
+	| token1 token4 token2 token6 token3 token5 tokenX 
+	| token4 token2 token6 token3 token5 tokenX 
+	| token1 token4 token2 token5 token6 token3 tokenX 
+	| token1 token4 token2 token6 token3 tokenX 
+	| token4 token2 token5 token6 token3 tokenX 
+	| token4 token2 token6 token3 tokenX 
+	| token1 token4 token2 token5 token3 token6 tokenX 
+	| token1 token6 token4 tokenX 
+	| token1 token6 token4 token5 tokenX 
+	| token2 token3 token6 token4 token5 tokenX 
+	| token2 token6 token4 token5 tokenX 
+	| token3 token6 token4 token5 tokenX 
+	| token6 token4 token5 tokenX 
+	| token1 token2 token3 token5 token6 token4 tokenX 
+	| token1 token2 token3 token6 token4 tokenX 
+	| token1 token2 token5 token6 token4 tokenX 
+	| token1 token2 token6 token4 tokenX 
+	| token1 token3 token5 token6 token4 tokenX 
+	| token1 token3 token6 token4 tokenX 
+	| token1 token5 token6 token4 tokenX 
+	| token1 token3 token6 token4 token5 tokenX 
+	| token2 token3 token5 token6 token4 tokenX 
+	| token2 token3 token6 token4 tokenX 
+	| token2 token5 token6 token4 tokenX 
+	| token2 token6 token4 tokenX 
+	| token3 token5 token6 token4 tokenX 
+	| token3 token6 token4 tokenX 
+	| token5 token6 token4 tokenX 
+	| token6 token4 tokenX 
+	| token1 token2 token3 token5 token4 token6 tokenX 
+	| token1 token2 token5 token4 token6 tokenX 
+	| token1 token3 token5 token4 token6 tokenX 
+	| token1 token5 token4 token6 tokenX 
+	| token4 token3 token5 token6 tokenX 
+	| token4 token5 token3 token6 tokenX 
+	| token5 token3 token6 tokenX 
+	| token1 token2 token4 token3 token6 token5 tokenX 
+	| token1 token4 token3 token6 token5 tokenX 
+	| token2 token4 token3 token6 token5 tokenX 
+	| token4 token3 token6 token5 tokenX 
+	| token1 token2 token4 token3 token5 token6 tokenX 
+	| token1 token2 token4 token3 token6 tokenX 
+	| token1 token4 token3 token5 token6 tokenX 
+	| token1 token4 token3 token6 tokenX 
+	| token2 token4 token3 token5 token6 tokenX 
+	| token2 token4 token3 token6 tokenX 
+	| token2 token3 token5 token4 token6 tokenX 
+	| token4 token3 token6 tokenX 
+	| token1 token2 token3 token6 token5 token4 tokenX 
+	| token1 token2 token6 token5 token4 tokenX 
+	| token1 token3 token6 token5 token4 tokenX 
+	| token1 token6 token5 token4 tokenX 
+	| token2 token3 token6 token5 token4 tokenX 
+	| token2 token6 token5 token4 tokenX 
+	| token3 token6 token5 token4 tokenX 
+	| token6 token5 token4 tokenX 
+	| token1 token2 token3 token6 token4 token5 tokenX 
+	| token1 token2 token6 token4 token5 tokenX 
+	| token2 token3 token5 token6 tokenX 
+	| token1 token2 token5 token6 tokenX 
+	| token1 token2 token6 tokenX 
+	| token1 token3 token4 token5 token6 tokenX 
+	| token1 token3 token4 token6 tokenX 
+	| token1 token3 token5 token6 tokenX 
+	| token1 token3 token6 tokenX 
+	| token1 token4 token5 token6 tokenX 
+	| token1 token4 token6 tokenX 
+	| token1 token5 token6 tokenX 
+	| token1 token6 tokenX 
+	| token2 token3 token4 token5 token6 tokenX 
+	| token2 token3 token4 token6 tokenX 
+	| token1 token2 token4 token6 tokenX 
+	| token2 token3 token6 tokenX 
+	| token2 token4 token5 token6 tokenX 
+	| token2 token4 token6 tokenX 
+	| token2 token5 token6 tokenX 
+	| token2 token6 tokenX 
+	| token3 token4 token5 token6 tokenX 
+	| token3 token4 token6 tokenX 
+	| token3 token5 token6 tokenX 
+	| token3 token6 tokenX 
+	| token4 token5 token6 tokenX 
+	| token4 token6 tokenX 
+	| token5 token6 tokenX 
+	| token2 token3 token6 token5 tokenX 
+	| token2 token5 token4 token6 tokenX 
+	| token3 token5 token4 token6 tokenX 
+	| token5 token4 token6 tokenX 
+	| token1 token2 token3 token4 token6 token5 tokenX 
+	| token1 token2 token3 token6 token5 tokenX 
+	| token1 token2 token4 token6 token5 tokenX 
+	| token1 token2 token6 token5 tokenX 
+	| token1 token3 token4 token6 token5 tokenX 
+	| token1 token3 token6 token5 tokenX 
+	| token1 token4 token6 token5 tokenX 
+	| token1 token6 token5 tokenX 
+	| token2 token3 token4 token6 token5 tokenX 
+	| token2 token5 token3 token6 tokenX 
+	| token2 token4 token6 token5 tokenX 
+	| token2 token6 token5 tokenX 
+	| token3 token4 token6 token5 tokenX 
+	| token3 token6 token5 tokenX 
+	| token4 token6 token5 tokenX 
+	| token6 token5 tokenX 
+	| token1 token2 token3 token4 token5 token6 tokenX 
+	| token1 token2 token3 token4 token6 tokenX 
+	| token1 token2 token3 token5 token6 tokenX 
+	| token1 token2 token3 token6 tokenX 
+	| token1 token2 token4 token5 token6 tokenX 
+	| token2 token6 token4 token3 tokenX 
+	| token1 token6 token3 token5 token4 tokenX 
+	| token2 token6 token3 token5 token4 tokenX 
+	| token6 token3 token5 token4 tokenX 
+	| token1 token2 token6 token3 token4 token5 tokenX 
+	| token1 token6 token3 token4 token5 tokenX 
+	| token2 token6 token3 token4 token5 tokenX 
+	| token6 token3 token4 token5 tokenX 
+	| token1 token2 token5 token6 token4 token3 tokenX 
+	| token1 token2 token6 token4 token3 tokenX 
+	| token1 token5 token6 token4 token3 tokenX 
+	| token1 token6 token4 token3 tokenX 
+	| token2 token5 token6 token4 token3 tokenX 
+	| token1 token2 token6 token3 token5 token4 tokenX 
+	| token5 token6 token4 token3 tokenX 
+	| token6 token4 token3 tokenX 
+	| token1 token2 token5 token6 token3 token4 tokenX 
+	| token1 token2 token6 token3 token4 tokenX 
+	| token1 token5 token6 token3 token4 tokenX 
+	| token1 token6 token3 token4 tokenX 
+	| token2 token5 token6 token3 token4 tokenX 
+	| token2 token6 token3 token4 tokenX 
+	| token5 token6 token3 token4 tokenX 
+	| token6 token3 token4 tokenX 
+	| token1 token2 token5 token4 token6 token3 tokenX 
+	| token1 token5 token4 token6 token3 tokenX 
+	| token1 token2 token6 token5 token3 token4 tokenX 
+	| token1 token3 token2 token4 token5 token6 tokenX 
+	| token1 token3 token2 token4 token6 tokenX 
+	| token1 token3 token2 token5 token6 tokenX 
+	| token1 token3 token2 token6 tokenX 
+	| token3 token2 token4 token5 token6 tokenX 
+	| token3 token2 token4 token6 tokenX 
+	| token3 token2 token5 token6 tokenX 
+	| token3 token2 token6 tokenX 
+	| token1 token2 token6 token5 token4 token3 tokenX 
+	| token1 token6 token5 token4 token3 tokenX 
+	| token2 token6 token5 token4 token3 tokenX 
+	| token6 token5 token4 token3 tokenX 
+	| token2 token5 token4 token6 token3 tokenX 
+	| token1 token6 token5 token3 token4 tokenX 
+	| token2 token6 token5 token3 token4 tokenX 
+	| token6 token5 token3 token4 tokenX 
+	| token1 token2 token6 token4 token5 token3 tokenX 
+	| token1 token6 token4 token5 token3 tokenX 
+	| token2 token6 token4 token5 token3 tokenX 
+	| token6 token4 token5 token3 tokenX 
+	| token1 token2 token6 token4 token3 token5 tokenX 
+	| token1 token6 token4 token3 token5 tokenX 
+	| token2 token6 token4 token3 token5 tokenX 
+	| token6 token4 token3 token5 tokenX 
+	| token2 token4 token5 token6 token3 tokenX 
+	| token2 token4 token6 token3 token5 tokenX 
+	| token2 token6 token3 token5 tokenX 
+	| token4 token6 token3 token5 tokenX 
+	| token6 token3 token5 tokenX 
+	| token1 token2 token4 token5 token6 token3 tokenX 
+	| token1 token2 token4 token6 token3 tokenX 
+	| token1 token2 token5 token6 token3 tokenX 
+	| token1 token2 token6 token3 tokenX 
+	| token1 token4 token5 token6 token3 tokenX 
+	| token1 token4 token6 token3 tokenX 
+	| token1 token5 token6 token3 tokenX 
+	| token1 token6 token3 tokenX 
+	| token1 token6 token3 token5 tokenX 
+	| token2 token4 token6 token3 tokenX 
+	| token2 token5 token6 token3 tokenX 
+	| token2 token6 token3 tokenX 
+	| token4 token5 token6 token3 tokenX 
+	| token4 token6 token3 tokenX 
+	| token5 token6 token3 tokenX 
+	| token6 token3 tokenX 
+	| token1 token2 token4 token5 token3 token6 tokenX 
+	| token1 token2 token5 token3 token6 tokenX 
+	| token1 token4 token5 token3 token6 tokenX 
+	| token1 token5 token3 token6 tokenX 
+	| token2 token4 token5 token3 token6 tokenX 
+	| token5 token3 token4 token6 tokenX 
+	| token5 token4 token6 token3 tokenX 
+	| token1 token2 token5 token4 token3 token6 tokenX 
+	| token1 token5 token4 token3 token6 tokenX 
+	| token2 token5 token4 token3 token6 tokenX 
+	| token5 token4 token3 token6 tokenX 
+	| token1 token2 token5 token3 token6 token4 tokenX 
+	| token1 token5 token3 token6 token4 tokenX 
+	| token2 token5 token3 token6 token4 tokenX 
+	| token5 token3 token6 token4 tokenX 
+	| token1 token2 token5 token3 token4 token6 tokenX 
+	| token1 token5 token3 token4 token6 tokenX 
+	| token2 token5 token3 token4 token6 tokenX 
+	| token1 token6 token5 token2 token3 tokenX 
+	| token1 token2 token4 token6 token5 token3 tokenX 
+	| token1 token2 token6 token5 token3 tokenX 
+	| token1 token4 token6 token5 token3 tokenX 
+	| token1 token6 token5 token3 tokenX 
+	| token2 token4 token6 token5 token3 tokenX 
+	| token2 token6 token5 token3 tokenX 
+	| token4 token6 token5 token3 tokenX 
+	| token6 token5 token3 tokenX 
+	| token1 token2 token4 token6 token3 token5 tokenX 
+	| token1 token2 token6 token3 token5 tokenX 
+	| token1 token4 token6 token3 token5 tokenX 
+	| token2 token3 token6 token4 token1 tokenX 
+	| token2 token6 token4 token1 token5 tokenX 
+	| token3 token6 token4 token1 token5 tokenX 
+	| token6 token4 token1 token5 tokenX 
+	| token2 token3 token6 token1 token5 token4 tokenX 
+	| token2 token6 token1 token5 token4 tokenX 
+	| token3 token6 token1 token5 token4 tokenX 
+	| token6 token1 token5 token4 tokenX 
+	| token2 token3 token6 token1 token4 token5 tokenX 
+	| token2 token6 token1 token4 token5 tokenX 
+	| token3 token6 token1 token4 token5 tokenX 
+	| token6 token1 token4 token5 tokenX 
+	| token2 token3 token5 token6 token4 token1 tokenX 
+	| token2 token3 token6 token4 token1 token5 tokenX 
+	| token2 token5 token6 token4 token1 tokenX 
+	| token2 token6 token4 token1 tokenX 
+	| token3 token5 token6 token4 token1 tokenX 
+	| token3 token6 token4 token1 tokenX 
+	| token5 token6 token4 token1 tokenX 
+	| token6 token4 token1 tokenX 
+	| token2 token3 token5 token6 token1 token4 tokenX 
+	| token2 token3 token6 token1 token4 tokenX 
+	| token2 token5 token6 token1 token4 tokenX 
+	| token2 token6 token1 token4 tokenX 
+	| token3 token5 token6 token1 token4 tokenX 
+	| token3 token6 token1 token4 tokenX 
+	| token2 token3 token6 token5 token4 token1 tokenX 
+	| token2 token4 token1 token5 token6 token3 tokenX 
+	| token2 token4 token1 token6 token3 tokenX 
+	| token4 token1 token5 token6 token3 tokenX 
+	| token4 token1 token6 token3 tokenX 
+	| token2 token4 token1 token5 token3 token6 tokenX 
+	| token4 token1 token5 token3 token6 tokenX 
+	| token2 token4 token1 token3 token6 token5 tokenX 
+	| token4 token1 token3 token6 token5 tokenX 
+	| token2 token4 token1 token3 token5 token6 tokenX 
+	| token2 token4 token1 token3 token6 tokenX 
+	| token4 token1 token3 token5 token6 tokenX 
+	| token4 token1 token3 token6 tokenX 
+	| token5 token6 token1 token4 tokenX 
+	| token2 token6 token5 token4 token1 tokenX 
+	| token3 token6 token5 token4 token1 tokenX 
+	| token6 token5 token4 token1 tokenX 
+	| token2 token3 token6 token5 token1 token4 tokenX 
+	| token2 token6 token5 token1 token4 tokenX 
+	| token3 token6 token5 token1 token4 tokenX 
+	| token6 token5 token1 token4 tokenX 
+	| token2 token3 token6 token4 token5 token1 tokenX 
+	| token2 token6 token4 token5 token1 tokenX 
+	| token3 token6 token4 token5 token1 tokenX 
+	| token6 token4 token5 token1 tokenX 
+	| token2 token4 token5 token6 token1 tokenX 
+	| token2 token3 token4 token6 token1 token5 tokenX 
+	| token2 token3 token6 token1 token5 tokenX 
+	| token2 token4 token6 token1 token5 tokenX 
+	| token2 token6 token1 token5 tokenX 
+	| token3 token4 token6 token1 token5 tokenX 
+	| token3 token6 token1 token5 tokenX 
+	| token4 token6 token1 token5 tokenX 
+	| token6 token1 token5 tokenX 
+	| token2 token3 token4 token5 token6 token1 tokenX 
+	| token2 token3 token4 token6 token1 tokenX 
+	| token2 token3 token5 token6 token1 tokenX 
+	| token2 token3 token6 token1 tokenX 
+	| token6 token5 token1 tokenX 
+	| token2 token4 token6 token1 tokenX 
+	| token2 token5 token6 token1 tokenX 
+	| token2 token6 token1 tokenX 
+	| token3 token4 token5 token6 token1 tokenX 
+	| token3 token4 token6 token1 tokenX 
+	| token3 token5 token6 token1 tokenX 
+	| token3 token6 token1 tokenX 
+	| token4 token5 token6 token1 tokenX 
+	| token4 token6 token1 tokenX 
+	| token5 token6 token1 tokenX 
+	| token6 token1 tokenX 
+	| token2 token3 token4 token5 token1 token6 tokenX 
+	| token5 token1 token6 token4 tokenX 
+	| token6 token1 token4 tokenX 
+	| token2 token3 token5 token4 token6 token1 tokenX 
+	| token2 token5 token4 token6 token1 tokenX 
+	| token3 token5 token4 token6 token1 tokenX 
+	| token5 token4 token6 token1 tokenX 
+	| token2 token3 token5 token4 token1 token6 tokenX 
+	| token2 token5 token4 token1 token6 tokenX 
+	| token3 token5 token4 token1 token6 tokenX 
+	| token5 token4 token1 token6 tokenX 
+	| token2 token3 token5 token1 token6 token4 tokenX 
+	| token2 token5 token1 token6 token4 tokenX 
+	| token3 token5 token1 token6 token4 tokenX 
+	| token4 token1 token6 token3 token5 tokenX 
+	| token2 token3 token5 token1 token4 token6 tokenX 
+	| token2 token5 token1 token4 token6 tokenX 
+	| token3 token5 token1 token4 token6 tokenX 
+	| token5 token1 token4 token6 tokenX 
+	| token2 token3 token4 token6 token5 token1 tokenX 
+	| token2 token3 token6 token5 token1 tokenX 
+	| token2 token4 token6 token5 token1 tokenX 
+	| token2 token6 token5 token1 tokenX 
+	| token3 token4 token6 token5 token1 tokenX 
+	| token3 token6 token5 token1 tokenX 
+	| token4 token6 token5 token1 tokenX 
+	| token6 token3 token5 token1 tokenX 
+	| token5 token1 token3 token4 token6 tokenX 
+	| token2 token4 token6 token5 token3 token1 tokenX 
+	| token2 token6 token5 token3 token1 tokenX 
+	| token4 token6 token5 token3 token1 tokenX 
+	| token6 token5 token3 token1 tokenX 
+	| token2 token4 token6 token5 token1 token3 tokenX 
+	| token2 token6 token5 token1 token3 tokenX 
+	| token4 token6 token5 token1 token3 tokenX 
+	| token6 token5 token1 token3 tokenX 
+	| token2 token4 token6 token3 token5 token1 tokenX 
+	| token2 token6 token3 token5 token1 tokenX 
+	| token4 token6 token3 token5 token1 tokenX 
+	| token2 token5 token1 token3 token4 token6 tokenX 
+	| token2 token4 token6 token3 token1 token5 tokenX 
+	| token2 token6 token3 token1 token5 tokenX 
+	| token4 token6 token3 token1 token5 tokenX 
+	| token6 token3 token1 token5 tokenX 
+	| token2 token4 token6 token1 token5 token3 tokenX 
+	| token2 token6 token1 token5 token3 tokenX 
+	| token4 token6 token1 token5 token3 tokenX 
+	| token6 token1 token5 token3 tokenX 
+	| token2 token4 token6 token1 token3 token5 tokenX 
+	| token2 token6 token1 token3 token5 tokenX 
+	| token4 token6 token1 token3 token5 tokenX 
+	| token6 token1 token3 token5 tokenX 
+	| token2 token5 token3 token1 token4 token6 tokenX 
+	| token2 token5 token4 token1 token3 token6 tokenX 
+	| token5 token4 token1 token3 token6 tokenX 
+	| token2 token5 token3 token6 token4 token1 tokenX 
+	| token5 token3 token6 token4 token1 tokenX 
+	| token2 token5 token3 token6 token1 token4 tokenX 
+	| token5 token3 token6 token1 token4 tokenX 
+	| token2 token5 token3 token4 token6 token1 tokenX 
+	| token5 token3 token4 token6 token1 tokenX 
+	| token2 token5 token3 token4 token1 token6 tokenX 
+	| token5 token3 token4 token1 token6 tokenX 
+	| token2 token5 token3 token1 token6 token4 tokenX 
+	| token5 token3 token1 token6 token4 tokenX 
+	| token2 token4 token5 token6 token3 token1 tokenX 
+	| token5 token3 token1 token4 token6 tokenX 
+	| token2 token5 token1 token6 token4 token3 tokenX 
+	| token5 token1 token6 token4 token3 tokenX 
+	| token2 token5 token1 token6 token3 token4 tokenX 
+	| token5 token1 token6 token3 token4 tokenX 
+	| token2 token5 token1 token4 token6 token3 tokenX 
+	| token5 token1 token4 token6 token3 tokenX 
+	| token2 token5 token1 token4 token3 token6 tokenX 
+	| token5 token1 token4 token3 token6 tokenX 
+	| token2 token5 token1 token3 token6 token4 tokenX 
+	| token5 token1 token3 token6 token4 tokenX 
+	| token4 token3 token5 token6 token1 tokenX 
+	| token4 token5 token1 token6 token3 tokenX 
+	| token5 token1 token6 token3 tokenX 
+	| token2 token4 token5 token1 token3 token6 tokenX 
+	| token2 token5 token1 token3 token6 tokenX 
+	| token4 token5 token1 token3 token6 tokenX 
+	| token5 token1 token3 token6 tokenX 
+	| token2 token4 token3 token6 token5 token1 tokenX 
+	| token4 token3 token6 token5 token1 tokenX 
+	| token2 token4 token3 token6 token1 token5 tokenX 
+	| token4 token3 token6 token1 token5 tokenX 
+	| token2 token4 token3 token5 token6 token1 tokenX 
+	| token2 token4 token3 token6 token1 tokenX 
+	| token2 token5 token1 token6 token3 tokenX 
+	| token4 token3 token6 token1 tokenX 
+	| token2 token4 token3 token5 token1 token6 tokenX 
+	| token4 token3 token5 token1 token6 tokenX 
+	| token2 token4 token3 token1 token6 token5 tokenX 
+	| token4 token3 token1 token6 token5 tokenX 
+	| token2 token4 token3 token1 token5 token6 tokenX 
+	| token2 token4 token3 token1 token6 tokenX 
+	| token4 token3 token1 token5 token6 tokenX 
+	| token4 token3 token1 token6 tokenX 
+	| token2 token4 token1 token6 token5 token3 tokenX 
+	| token4 token1 token6 token5 token3 tokenX 
+	| token2 token4 token1 token6 token3 token5 tokenX 
+	| token4 token6 token1 token3 tokenX 
+	| token2 token4 token6 token3 token1 tokenX 
+	| token2 token5 token6 token3 token1 tokenX 
+	| token2 token6 token3 token1 tokenX 
+	| token4 token5 token6 token3 token1 tokenX 
+	| token4 token6 token3 token1 tokenX 
+	| token5 token6 token3 token1 tokenX 
+	| token6 token3 token1 tokenX 
+	| token2 token4 token5 token6 token1 token3 tokenX 
+	| token2 token4 token6 token1 token3 tokenX 
+	| token2 token5 token6 token1 token3 tokenX 
+	| token2 token6 token1 token3 tokenX 
+	| token4 token5 token6 token1 token3 tokenX 
+	| token2 token3 token5 token1 token6 tokenX 
+	| token5 token6 token1 token3 tokenX 
+	| token6 token1 token3 tokenX 
+	| token2 token4 token5 token3 token6 token1 tokenX 
+	| token2 token5 token3 token6 token1 tokenX 
+	| token4 token5 token3 token6 token1 tokenX 
+	| token5 token3 token6 token1 tokenX 
+	| token2 token4 token5 token3 token1 token6 tokenX 
+	| token2 token5 token3 token1 token6 tokenX 
+	| token4 token5 token3 token1 token6 tokenX 
+	| token5 token3 token1 token6 tokenX 
+	| token2 token4 token5 token1 token6 token3 tokenX 
+	| token1 token6 token4 token3 token2 tokenX 
+	| token6 token2 token5 token4 token3 tokenX 
+	| token1 token6 token2 token5 token3 token4 tokenX 
+	| token6 token2 token5 token3 token4 tokenX 
+	| token1 token6 token2 token4 token5 token3 tokenX 
+	| token6 token2 token4 token5 token3 tokenX 
+	| token1 token6 token2 token4 token3 token5 tokenX 
+	| token6 token2 token4 token3 token5 tokenX 
+	| token1 token6 token2 token3 token5 token4 tokenX 
+	| token6 token2 token3 token5 token4 tokenX 
+	| token1 token6 token2 token3 token4 token5 tokenX 
+	| token6 token2 token3 token4 token5 tokenX 
+	| token1 token5 token6 token4 token3 token2 tokenX 
+	| token1 token6 token2 token5 token4 token3 tokenX 
+	| token5 token6 token4 token3 token2 tokenX 
+	| token6 token4 token3 token2 tokenX 
+	| token1 token5 token6 token4 token2 token3 tokenX 
+	| token1 token6 token4 token2 token3 tokenX 
+	| token5 token6 token4 token2 token3 tokenX 
+	| token6 token4 token2 token3 tokenX 
+	| token1 token5 token6 token3 token4 token2 tokenX 
+	| token1 token6 token3 token4 token2 tokenX 
+	| token5 token6 token3 token4 token2 tokenX 
+	| token6 token3 token4 token2 tokenX 
+	| token1 token5 token6 token3 token2 token4 tokenX 
+	| token1 token6 token3 token2 token4 tokenX 
+	| token1 token6 token3 token5 token4 token2 tokenX 
+	| token1 token6 token4 token5 token3 token2 tokenX 
+	| token6 token4 token5 token3 token2 tokenX 
+	| token1 token6 token4 token5 token2 token3 tokenX 
+	| token6 token4 token5 token2 token3 tokenX 
+	| token1 token6 token4 token3 token5 token2 tokenX 
+	| token6 token4 token3 token5 token2 tokenX 
+	| token1 token6 token4 token3 token2 token5 tokenX 
+	| token6 token4 token3 token2 token5 tokenX 
+	| token1 token6 token4 token2 token5 token3 tokenX 
+	| token6 token4 token2 token5 token3 tokenX 
+	| token1 token6 token4 token2 token3 token5 tokenX 
+	| token6 token4 token2 token3 token5 tokenX 
+	| token5 token6 token3 token2 token4 tokenX 
+	| token6 token3 token5 token4 token2 tokenX 
+	| token1 token6 token3 token5 token2 token4 tokenX 
+	| token6 token3 token5 token2 token4 tokenX 
+	| token1 token6 token3 token4 token5 token2 tokenX 
+	| token6 token3 token4 token5 token2 tokenX 
+	| token1 token6 token3 token4 token2 token5 tokenX 
+	| token6 token3 token4 token2 token5 tokenX 
+	| token1 token6 token3 token2 token5 token4 tokenX 
+	| token6 token3 token2 token5 token4 tokenX 
+	| token1 token6 token3 token2 token4 token5 tokenX 
+	| token6 token3 token2 token4 token5 tokenX 
+	| token1 token5 token2 token4 token6 token3 tokenX 
+	| token1 token5 token3 token4 token6 token2 tokenX 
+	| token5 token3 token4 token6 token2 tokenX 
+	| token1 token5 token3 token4 token2 token6 tokenX 
+	| token5 token3 token4 token2 token6 tokenX 
+	| token1 token5 token3 token2 token6 token4 tokenX 
+	| token5 token3 token2 token6 token4 tokenX 
+	| token1 token5 token3 token2 token4 token6 tokenX 
+	| token5 token3 token2 token4 token6 tokenX 
+	| token1 token5 token2 token6 token4 token3 tokenX 
+	| token5 token2 token6 token4 token3 tokenX 
+	| token1 token5 token2 token6 token3 token4 tokenX 
+	| token5 token2 token6 token3 token4 tokenX 
+	| token5 token3 token6 token2 token4 tokenX 
+	| token5 token2 token4 token6 token3 tokenX 
+	| token1 token5 token2 token4 token3 token6 tokenX 
+	| token5 token2 token4 token3 token6 tokenX 
+	| token1 token5 token2 token3 token6 token4 tokenX 
+	| token5 token2 token3 token6 token4 tokenX 
+	| token1 token5 token2 token3 token4 token6 tokenX 
+	| token5 token2 token3 token4 token6 tokenX 
+	| token1 token4 token6 token5 token3 token2 tokenX 
+	| token1 token6 token5 token3 token2 tokenX 
+	| token4 token6 token5 token3 token2 tokenX 
+	| token6 token5 token3 token2 tokenX 
+	| token1 token4 token6 token5 token2 token3 tokenX 
+	| token5 token4 token6 token2 token3 tokenX 
+	| token6 token3 token2 token4 tokenX 
+	| token1 token5 token6 token2 token4 token3 tokenX 
+	| token1 token6 token2 token4 token3 tokenX 
+	| token5 token6 token2 token4 token3 tokenX 
+	| token6 token2 token4 token3 tokenX 
+	| token1 token5 token6 token2 token3 token4 tokenX 
+	| token1 token6 token2 token3 token4 tokenX 
+	| token5 token6 token2 token3 token4 tokenX 
+	| token6 token2 token3 token4 tokenX 
+	| token1 token5 token4 token6 token3 token2 tokenX 
+	| token5 token4 token6 token3 token2 tokenX 
+	| token1 token5 token4 token6 token2 token3 tokenX 
+	| token6 token5 token2 token3 token4 tokenX 
+	| token1 token5 token4 token3 token6 token2 tokenX 
+	| token5 token4 token3 token6 token2 tokenX 
+	| token1 token5 token4 token3 token2 token6 tokenX 
+	| token5 token4 token3 token2 token6 tokenX 
+	| token1 token5 token4 token2 token6 token3 tokenX 
+	| token5 token4 token2 token6 token3 tokenX 
+	| token1 token5 token4 token2 token3 token6 tokenX 
+	| token5 token4 token2 token3 token6 tokenX 
+	| token1 token5 token3 token6 token4 token2 tokenX 
+	| token5 token3 token6 token4 token2 tokenX 
+	| token1 token5 token3 token6 token2 token4 tokenX 
+	| token3 token1 token4 token6 tokenX 
+	| token3 token1 token6 token4 tokenX 
+	| token2 token3 token1 token5 token4 token6 tokenX 
+	| token3 token1 token5 token4 token6 tokenX 
+	| token2 token3 token1 token4 token6 token5 tokenX 
+	| token2 token3 token1 token6 token5 tokenX 
+	| token3 token1 token4 token6 token5 tokenX 
+	| token3 token1 token6 token5 tokenX 
+	| token2 token3 token1 token4 token5 token6 tokenX 
+	| token2 token3 token1 token4 token6 tokenX 
+	| token2 token3 token1 token5 token6 tokenX 
+	| token2 token3 token1 token6 tokenX 
+	| token3 token1 token4 token5 token6 tokenX 
+	| token3 token1 token5 token6 token4 tokenX 
+	| token3 token1 token5 token6 tokenX 
+	| token3 token1 token6 tokenX 
+	| token2 token1 token6 token5 token4 token3 tokenX 
+	| token2 token1 token6 token5 token3 token4 tokenX 
+	| token2 token1 token6 token4 token5 token3 tokenX 
+	| token2 token1 token6 token4 token3 token5 tokenX 
+	| token2 token1 token6 token3 token5 token4 tokenX 
+	| token2 token1 token6 token3 token4 token5 tokenX 
+	| token2 token1 token5 token6 token4 token3 tokenX 
+	| token2 token1 token6 token4 token3 tokenX 
+	| token2 token1 token5 token6 token3 token4 tokenX 
+	| token2 token1 token6 token3 token4 tokenX 
+	| token2 token4 token1 token5 token6 tokenX 
+	| token2 token4 token5 token1 token6 tokenX 
+	| token2 token5 token1 token6 tokenX 
+	| token3 token4 token5 token1 token6 tokenX 
+	| token3 token5 token1 token6 tokenX 
+	| token4 token5 token1 token6 tokenX 
+	| token5 token1 token6 tokenX 
+	| token2 token3 token4 token1 token6 token5 tokenX 
+	| token2 token4 token1 token6 token5 tokenX 
+	| token3 token4 token1 token6 token5 tokenX 
+	| token4 token1 token6 token5 tokenX 
+	| token2 token3 token4 token1 token5 token6 tokenX 
+	| token2 token3 token4 token1 token6 tokenX 
+	| token2 token1 token5 token4 token6 token3 tokenX 
+	| token2 token4 token1 token6 tokenX 
+	| token3 token4 token1 token5 token6 tokenX 
+	| token3 token4 token1 token6 tokenX 
+	| token4 token1 token5 token6 tokenX 
+	| token4 token1 token6 tokenX 
+	| token2 token3 token1 token6 token5 token4 tokenX 
+	| token3 token1 token6 token5 token4 tokenX 
+	| token2 token3 token1 token6 token4 token5 tokenX 
+	| token3 token1 token6 token4 token5 tokenX 
+	| token2 token3 token1 token5 token6 token4 tokenX 
+	| token2 token3 token1 token6 token4 tokenX 
+	| token2 token1 token6 tokenX 
+	| token2 token1 token5 token4 token6 tokenX 
+	| token2 token1 token3 token4 token6 token5 tokenX 
+	| token2 token1 token3 token6 token5 tokenX 
+	| token2 token1 token4 token6 token5 tokenX 
+	| token2 token1 token6 token5 tokenX 
+	| token2 token1 token3 token4 token5 token6 tokenX 
+	| token2 token1 token3 token4 token6 tokenX 
+	| token2 token1 token3 token5 token6 tokenX 
+	| token2 token1 token3 token6 tokenX 
+	| token2 token1 token4 token5 token6 tokenX 
+	| token2 token1 token4 token6 tokenX 
+	| token2 token1 token5 token6 tokenX 
+	| token2 token1 token3 token5 token4 token6 tokenX 
+	| token1 token6 token5 token4 token3 token2 tokenX 
+	| token6 token5 token4 token3 token2 tokenX 
+	| token1 token6 token5 token4 token2 token3 tokenX 
+	| token6 token5 token4 token2 token3 tokenX 
+	| token1 token6 token5 token3 token4 token2 tokenX 
+	| token6 token5 token3 token4 token2 tokenX 
+	| token1 token6 token5 token3 token2 token4 tokenX 
+	| token6 token5 token3 token2 token4 tokenX 
+	| token1 token6 token5 token2 token4 token3 tokenX 
+	| token6 token5 token2 token4 token3 tokenX 
+	| token1 token6 token5 token2 token3 token4 tokenX 
+	| token2 token1 token5 token3 token6 tokenX 
+	| token2 token1 token5 token4 token3 token6 tokenX 
+	| token2 token1 token5 token3 token6 token4 tokenX 
+	| token2 token1 token5 token3 token4 token6 tokenX 
+	| token2 token1 token4 token6 token5 token3 tokenX 
+	| token2 token1 token6 token5 token3 tokenX 
+	| token2 token1 token4 token6 token3 token5 tokenX 
+	| token2 token1 token6 token3 token5 tokenX 
+	| token2 token1 token4 token5 token6 token3 tokenX 
+	| token2 token1 token4 token6 token3 tokenX 
+	| token2 token1 token5 token6 token3 tokenX 
+	| token2 token1 token6 token3 tokenX 
+	| token2 token1 token4 token5 token3 token6 tokenX 
+	| token6 tokenX 
+	| token2 token1 token4 token3 token6 token5 tokenX 
+	| token2 token1 token4 token3 token5 token6 tokenX 
+	| token2 token1 token4 token3 token6 tokenX 
+	| token2 token1 token3 token6 token5 token4 tokenX 
+	| token2 token1 token6 token5 token4 tokenX 
+	| token2 token1 token3 token6 token4 token5 tokenX 
+	| token2 token1 token6 token4 token5 tokenX 
+	| token2 token1 token3 token5 token6 token4 tokenX 
+	| token2 token1 token3 token6 token4 tokenX 
+	| token2 token1 token5 token6 token4 tokenX 
+	| token2 token1 token6 token4 tokenX 
+	;

@@ -1,0 +1,139 @@
+%tokens
+
+NAME AGE ADDRESS HOBBIES STREET CITY STATE POSTALCODE : { } [ ] , STRING INT 
+
+%rules
+
+init
+	: { name age hobbies2 } 
+	| { hobbies address name age2 } 
+	| { name age address2 } 
+	| { name age hobbies address2 } 
+	| { name hobbies age address2 } 
+	| { age name address2 } 
+	| { age name hobbies address2 } 
+	| { age hobbies name address2 } 
+	| { hobbies name age address2 } 
+	| { hobbies age name address2 } 
+	| { hobbies name address age2 } 
+	| { name age address hobbies2 } 
+	| { name address age hobbies2 } 
+	| { age name hobbies2 } 
+	| { age name address hobbies2 } 
+	| { age address name hobbies2 } 
+	| { address name age hobbies2 } 
+	| { address age name hobbies2 } 
+	| { age name2 } 
+	| { hobbies age address name2 } 
+	| { age hobbies name2 } 
+	| { age address name2 } 
+	| { age address hobbies name2 } 
+	| { age hobbies address name2 } 
+	| { address age name2 } 
+	| { address age hobbies name2 } 
+	| { hobbies age name2 } 
+	| { address hobbies age name2 } 
+	| { address hobbies name age2 } 
+	| { hobbies address age name2 } 
+	| { name age2 } 
+	| { name hobbies age2 } 
+	| { name address age2 } 
+	| { name address hobbies age2 } 
+	| { name hobbies address age2 } 
+	| { address name age2 } 
+	| { address name hobbies age2 } 
+	| { hobbies name age2 } 
+	;
+
+name
+	: name2 , 
+	;
+
+age
+	: age2 , 
+	;
+
+address
+	: address2 , 
+	;
+
+hobbies
+	: hobbies2 , 
+	;
+
+name2
+	: NAME : STRING 
+	;
+
+age2
+	: AGE : INT 
+	;
+
+address2
+	: ADDRESS : { code street city state2 } 
+	| ADDRESS : { state city street code2 } 
+	| ADDRESS : { state street city code2 } 
+	| ADDRESS : { city state street code2 } 
+	| ADDRESS : { city street state code2 } 
+	| ADDRESS : { street state city code2 } 
+	| ADDRESS : { street city state code2 } 
+	| ADDRESS : { code city street state2 } 
+	| ADDRESS : { city code street state2 } 
+	| ADDRESS : { city street code state2 } 
+	| ADDRESS : { street code city state2 } 
+	| ADDRESS : { street city code state2 } 
+	| ADDRESS : { code street state city2 } 
+	| ADDRESS : { state code street city2 } 
+	| ADDRESS : { state street code city2 } 
+	| ADDRESS : { street code state city2 } 
+	| ADDRESS : { street state code city2 } 
+	| ADDRESS : { code state city street2 } 
+	| ADDRESS : { code city state street2 } 
+	| ADDRESS : { state code city street2 } 
+	| ADDRESS : { state city code street2 } 
+	| ADDRESS : { city code state street2 } 
+	| ADDRESS : { city state code street2 } 
+	| ADDRESS : { code state street city2 } 
+	;
+
+hobbies2
+	: HOBBIES : [ ] 
+	| HOBBIES : [ STRING moreHobbies ] 
+	;
+
+moreHobbies
+	: , STRING moreHobbies 
+	| 
+	;
+
+street
+	: street2 , 
+	;
+
+city
+	: city2 , 
+	;
+
+state
+	: state2 , 
+	;
+
+code
+	: code2 , 
+	;
+
+street2
+	: STREET : STRING 
+	;
+
+city2
+	: CITY : STRING 
+	;
+
+state2
+	: STATE : STRING 
+	;
+
+code2
+	: POSTALCODE : STRING 
+	;

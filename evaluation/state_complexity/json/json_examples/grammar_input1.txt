@@ -1,0 +1,8 @@
+{  
+    TITLE : STRING ,  
+    DIRECTOR : STRING ,  
+    RELEASEDATE : STRING ,  
+    GENRE : STRING ,  
+    DURATION : STRING ,  
+    CAST : [ STRING , STRING , STRING ]
+}

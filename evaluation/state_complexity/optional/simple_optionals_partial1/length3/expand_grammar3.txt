@@ -1,0 +1,16 @@
+%tokens
+
+token1 token2 token3 
+
+%rules
+
+init
+	: 
+	| << token1 >> 
+	| << token2 >> 
+	| << token1 || token2 >> 
+	| << token3 >> 
+	| << token1 || token3 >> 
+	| << token2 || token3 >> 
+	| << token1 || token2 || token3 >> 
+	;

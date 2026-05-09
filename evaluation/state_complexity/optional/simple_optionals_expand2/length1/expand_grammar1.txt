@@ -1,0 +1,10 @@
+%tokens
+
+token1 tokenX 
+
+%rules
+
+init
+	: tokenX 
+	| token1 tokenX 
+	;
