@@ -46,18 +46,24 @@ make
 
 ## Running
 
-After successful compilation, prepare you input_grammar file, you want to generate parser for and run:
+After successful compilation, prepare your input_grammar file, you want to generate parser for and run:
 
 ```bash
 ./main input_grammar
 ```
-As a result, a file parser.cpp will be created.
+As a result, file parser.cpp will be created. You can compiile and run the file with standars commands:
+```bash
+g++ parser.cpp -o parser
+```
+```bash
+./parser input_file_for_parser
+```
 
 ---
 
 ## Cleaning Build Files
 
-To remove generated binaries:
+To remove the generated binary file `main`:
 
 ```bash
 make clean
