@@ -40,6 +40,8 @@ To compile the test program, run:
 make
 ```
 
+Grammar files in the main folder are quite large, so compilation might take several minutes.
+
 ## Running the Tests
 
 After compilation, execute the test with:
