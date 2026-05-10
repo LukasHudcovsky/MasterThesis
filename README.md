@@ -13,6 +13,8 @@ The repository contains the parser generator implementation together with multip
 .
 ├── src/                # Source code of the parser generator
 ├── evaluation/         # Test programs and evaluation data
+├── licences/           # Licences for third-party software
+├── LICENCE
 └── README.md
 ```
 
